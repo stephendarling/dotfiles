@@ -1,0 +1,1 @@
+sketchybar --set aerospace.mode label=$AEROSPACE_MODE

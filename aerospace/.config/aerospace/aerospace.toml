@@ -35,7 +35,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 accordion-padding = 30
 
 # Possible values: tiles|accordion
-default-root-container-layout = 'tiles'
+default-root-container-layout = 'accordion'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
@@ -143,23 +143,62 @@ alt-shift-tab = 'workspace --wrap-around next'
 alt-tab = 'workspace-back-and-forth'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-alt-shift-semicolon = 'mode service'
+## TODO: Update sketchybar after mode switch with new mode
+alt-shift-semicolon = [
+  'mode service',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=service',
+]
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
-esc = ['reload-config', 'mode main']
-r = ['flatten-workspace-tree', 'mode main'] # reset layout
+
+esc = [
+  'reload-config',
+  'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
+]
+
+r = [
+  'flatten-workspace-tree',
+  'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
+] # reset layout
+
 f = [
   'layout floating tiling',
   'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
 ] # Toggle between floating and tiling layout
-backspace = ['close-all-windows-but-current', 'mode main']
 
-# sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-#s = ['layout sticky tiling', 'mode main']
+backspace = [
+  'close-all-windows-but-current',
+  'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
+]
 
-alt-shift-h = ['join-with left', 'mode main']
-alt-shift-j = ['join-with down', 'mode main']
-alt-shift-k = ['join-with up', 'mode main']
-alt-shift-l = ['join-with right', 'mode main']
+alt-shift-h = [
+  'join-with left',
+  'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
+]
+
+alt-shift-j = [
+  'join-with down',
+  'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
+]
+
+
+alt-shift-k = [
+  'join-with up',
+  'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
+]
+
+
+alt-shift-l = [
+  'join-with right',
+  'mode main',
+  'exec-and-forget sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main',
+]
