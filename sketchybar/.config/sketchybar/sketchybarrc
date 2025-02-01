@@ -74,9 +74,6 @@ sketchybar --add item clock right \
            --subscribe battery system_woke power_source_change
 
 source "$CONFIG_DIR/items/aerospaces.sh"
-source "$CONFIG_DIR/items/aerospace_mode.sh"
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
-sleep 1
-sketchybar --trigger aerospace_mode_change AEROSPACE_MODE=main
