@@ -129,6 +129,7 @@ alt-a = 'workspace any'
 alt-b = 'workspace browser'
 alt-c = 'workspace code'
 alt-t = 'workspace terminal'
+alt-w = 'workspace work'
 
 alt-r = 'balance-sizes'
 
@@ -137,6 +138,7 @@ alt-shift-a = 'move-node-to-workspace any --focus-follows-window'
 alt-shift-b = 'move-node-to-workspace browser --focus-follows-window'
 alt-shift-c = 'move-node-to-workspace code --focus-follows-window'
 alt-shift-t = 'move-node-to-workspace terminal --focus-follows-window'
+alt-shift-w = 'move-node-to-workspace work --focus-follows-window'
 
 alt-shift-tab = 'workspace --wrap-around next'
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
