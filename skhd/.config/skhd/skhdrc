@@ -1,0 +1,8 @@
+# SKHD - https://github.com/koekeishiya/skhd/tree/master
+# To update any of these config, make the changes here and restart the skhd process with
+# skhd --restart-service
+
+hyper - b : open -a 'Google Chrome'
+hyper - t : open -a 'iTerm'
+hyper - s : open -a 'Slack'
+hyper - c : open -a 'Visual Studio Code'
