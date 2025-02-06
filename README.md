@@ -31,3 +31,11 @@ ls -la ~/.config
 - [aerospace](https://nikitabobko.github.io/AeroSpace/guide)
 - [sketchybar](https://github.com/FelixKratz/SketchyBar)
 - [janky-borders](https://github.com/FelixKratz/JankyBorders)
+
+### SketchyBar
+
+Install fonts
+
+```sh
+brew install --cask font-hack-nerd-font
+```
