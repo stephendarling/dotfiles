@@ -30,6 +30,7 @@
     y u i o p
     h j k l ;
     b n m , . /
+    spc
   )
 )
 (deflayer base
