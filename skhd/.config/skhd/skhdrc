@@ -2,8 +2,8 @@
 # To update any of these config, make the changes here and restart the skhd process with
 # skhd --restart-service
 
-hyper - b : open -a 'Google Chrome'
-hyper - t : open -a 'iTerm'
-hyper - s : open -a 'Slack'
-hyper - c : open -a 'Visual Studio Code'
-hyper - z : open -a 'Zoom.us'
+meh - b : open -a 'Google Chrome'
+meh - t : open -a 'iTerm'
+meh - s : open -a 'Slack'
+meh - c : open -a 'Visual Studio Code'
+meh - z : open -a 'Zoom.us'

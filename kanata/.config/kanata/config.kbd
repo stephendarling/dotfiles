@@ -1,0 +1,72 @@
+;; Home row mods QWERTY example with more complexity.
+;; Some of the changes from the basic example:
+;; - when a home row mod activates tap, the home row mods are disabled
+;;   while continuing to type rapidly
+;; - tap-hold-release helps make the hold action more responsive
+;; - pressing another key on the same half of the keyboard
+;;   as the home row mod will activate an early tap action
+
+(defcfg
+  process-unmapped-keys yes
+)
+(defsrc
+  r o
+  caps a s d f h j k l ;
+)
+(defvar
+  ;; Note: consider using different time values for your different fingers.
+  ;; For example, your pinkies might be slower to release keys and index
+  ;; fingers faster.
+  tap-time 200
+  hold-time 150
+  pinky-hold-time 185
+
+  left-hand-keys (
+    q w e r t
+    a s d f g
+    z x c v
+  )
+  right-hand-keys (
+    y u i o p
+    h j k l ;
+    b n m , . /
+  )
+)
+(deflayer base
+  r o
+  @caps @a @s @d @f h @j @k @l  @;
+)
+
+(deflayer nomods
+  r o
+  caps a s d f h j k l ;
+)
+(deflayer alt-layer
+  lrld caps
+  caps a s d f left down up right ;
+)
+(deffakekeys
+  to-base (layer-switch base)
+)
+(defalias
+  tap (multi
+    (layer-switch nomods)
+    (on-idle-fakekey to-base tap 20)
+  )
+
+  lhyper (multi lsft lalt lctl lmet)
+  lmeh (multi lsft lalt lctl)
+  rhyper (multi rsft ralt rctl rmet)
+  rmeh (multi rsft ralt rctl)
+
+
+  caps (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
+  a (tap-hold-release-keys $tap-time $pinky-hold-time (multi a @tap) @lhyper $left-hand-keys)
+  s (tap-hold-release-keys $tap-time $hold-time (multi s @tap) @lmeh $left-hand-keys)
+  d (tap-hold-release-keys $tap-time $hold-time (multi d @tap) lctl $left-hand-keys)
+  f (tap-hold-release-keys $tap-time $hold-time (multi f @tap) lalt $left-hand-keys)
+  j (tap-hold-release-keys $tap-time $hold-time (multi j @tap) ralt $right-hand-keys)
+  k (tap-hold-release-keys $tap-time $hold-time (multi k @tap) rctl $right-hand-keys)
+  l (tap-hold-release-keys $tap-time $hold-time (multi l @tap) @rmeh $right-hand-keys)
+  ; (tap-hold-release-keys $tap-time $pinky-hold-time (multi ; @tap) @rhyper $right-hand-keys)
+)

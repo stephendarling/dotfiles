@@ -1,0 +1,61 @@
+{
+    "workbench.colorTheme": "Night Owl",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[hcl]": {
+        "editor.tabSize": 2
+    },
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/stephendarling/.asdf/shims:$PATH"
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "/Users/stephendarling/.asdf/shims:$PATH"
+    },
+    "window.zoomLevel": 1,
+    "workbench.startupEditor": "none",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vimrc",
+    "vim.smartRelativeLine": true,
+    "editor.lineNumbers": "relative",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "terraform.experimentalFeatures.prefillRequiredFields": true,
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "files.associations": {
+        "*.tf": "terraform",
+        "*.tofu": "terraform"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+    },
+    "[templ]": {
+        "editor.defaultFormatter": "a-h.templ",
+        "editor.formatOnSave": true
+    },
+    "editor.autoIndent": "full",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "terraform.languageServer.terraform.path": "/Users/stephendarling/.asdf/shims/terraform",
+    "makefile.configureOnOpen": false,
+    "editor.wordWrapColumn": 120,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.rulers": [
+        120
+    ],
+    "tailwindCSS.includeLanguages": {
+        "templ": "html"
+    },
+    "templ.log": "/Users/stephendarling/.logs/templ.log",
+    "templ.goplsLog": "/Users/stephendarling/.logs/gopls.log",
+    "templ.http": "localhost:7575",
+    "templ.goplsRPCTrace": true,
+    "templ.pprof": false,
+}
