@@ -106,7 +106,7 @@ outer.right = 10
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion horizontal vertical'
+alt-comma = 'layout accordion vertical horizontal'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 alt-h = 'focus left'
@@ -173,27 +173,25 @@ backspace = [
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
 
-alt-shift-h = [
+h = [
   'join-with left',
   'mode main',
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
 
-alt-shift-j = [
+j = [
   'join-with down',
   'mode main',
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
 
-
-alt-shift-k = [
+k = [
   'join-with up',
   'mode main',
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
 
-
-alt-shift-l = [
+l = [
   'join-with right',
   'mode main',
   'exec-and-forget sketchybar --set aerospace.mode label=main',

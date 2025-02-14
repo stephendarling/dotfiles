@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Night Owl",
     "security.workspace.trust.untrustedFiles": "open",
     "[hcl]": {
         "editor.tabSize": 2
@@ -53,9 +52,7 @@
     "tailwindCSS.includeLanguages": {
         "templ": "html"
     },
-    "templ.log": "/Users/stephendarling/.logs/templ.log",
-    "templ.goplsLog": "/Users/stephendarling/.logs/gopls.log",
-    "templ.http": "localhost:7575",
-    "templ.goplsRPCTrace": true,
-    "templ.pprof": false,
+    "files.exclude": {
+        "**/*_templ.go": true
+    }
 }
