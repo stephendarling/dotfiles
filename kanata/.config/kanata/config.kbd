@@ -1,11 +1,3 @@
-;; Home row mods QWERTY example with more complexity.
-;; Some of the changes from the basic example:
-;; - when a home row mod activates tap, the home row mods are disabled
-;;   while continuing to type rapidly
-;; - tap-hold-release helps make the hold action more responsive
-;; - pressing another key on the same half of the keyboard
-;;   as the home row mod will activate an early tap action
-
 (defcfg
   process-unmapped-keys yes
 )
@@ -19,7 +11,7 @@
   ;; fingers faster.
   tap-time 0
   hold-time 150
-  pinky-hold-time 185
+  pinky-hold-time 150
 
   left-hand-keys (
     q w e r t
@@ -53,7 +45,7 @@
 (defalias
   tap (multi
     (layer-switch nomods)
-    (on-idle-fakekey to-base tap 20)
+    (on-idle-fakekey to-base tap 5)
   )
 
   lhyper (multi lsft lalt lctl lmet)
