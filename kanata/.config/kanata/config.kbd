@@ -60,12 +60,12 @@
 
 
   caps (tap-hold-press $tap-time $slow-hold-time esc (layer-while-held alt-layer))
-  x (tap-hold-release-keys $tap-time $hold-time (multi x @tap) @lhyper $left-hand-keys)
-  c (tap-hold-release-keys $tap-time $hold-time (multi c @tap) @lmeh $left-hand-keys)
+  x (tap-hold-release-keys $tap-time $slow-hold-time (multi x @tap) @lhyper $left-hand-keys)
+  c (tap-hold-release-keys $tap-time $slow-hold-time (multi c @tap) @lmeh $left-hand-keys)
   d (tap-hold-release-keys $tap-time $hold-time (multi d @tap) lctl $left-hand-keys)
   f (tap-hold-release-keys $tap-time $hold-time (multi f @tap) lalt $left-hand-keys)
   j (tap-hold-release-keys $tap-time $hold-time (multi j @tap) ralt $right-hand-keys)
   k (tap-hold-release-keys $tap-time $hold-time (multi k @tap) rctl $right-hand-keys)
-  m (tap-hold-release-keys $tap-time $hold-time (multi m @tap) @rmeh $right-hand-keys)
-  , (tap-hold-release-keys $tap-time $hold-time (multi , @tap) @rhyper $right-hand-keys)
+  m (tap-hold-release-keys $tap-time $slow-hold-time (multi m @tap) @rmeh $right-hand-keys)
+  , (tap-hold-release-keys $tap-time $slow-hold-time (multi , @tap) @rhyper $right-hand-keys)
 )
