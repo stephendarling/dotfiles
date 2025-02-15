@@ -40,7 +40,7 @@ default-root-container-layout = 'accordion'
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
 #               tall monitor (anything higher than wide) gets vertical orientation
-default-root-container-orientation = 'auto'
+default-root-container-orientation = 'vertical'
 
 # Mouse follows focus when focused monitor changes
 # Drop it from your config, if you don't like this behavior
@@ -106,7 +106,7 @@ outer.right = 10
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion vertical horizontal'
+alt-comma = 'layout accordion vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 alt-h = 'focus left'
@@ -176,12 +176,14 @@ backspace = [
 h = [
   'join-with left',
   'mode main',
+  'layout accordion vertical',
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
 
 j = [
   'join-with down',
   'mode main',
+  'layout accordion vertical',
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
 
@@ -194,5 +196,6 @@ k = [
 l = [
   'join-with right',
   'mode main',
+  'layout accordion vertical',
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
