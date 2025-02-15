@@ -5,9 +5,10 @@
   f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 
   r o
   caps a s d f h j k l ;
+  x c m ,
 )
 (defvar
-  tap-time 150
+  tap-time 0
   hold-time 125
   slow-hold-time 200
 
@@ -27,18 +28,21 @@
 (deflayer base
   brdn brup _  _  _  _  prev pp next mute vold volu
   r o
-  @caps @a @s @d @f h @j @k @l @;
+  @caps a s @d @f h @j @k l ;
+  @x @c @m @,
 )
 
 (deflayer nomods
   brdn brup _  _  _  _  prev pp next mute vold volu
   r o
   caps a s d f h j k l ;
+  x c m ,
 )
 (deflayer alt-layer
   brdn brup _  _  _  _  prev pp next mute vold volu
   lrld caps
   caps a s d f left down up right ;
+  x c m ,
 )
 (deffakekeys
   to-base (layer-switch base)
@@ -56,12 +60,12 @@
 
 
   caps (tap-hold-press $tap-time $slow-hold-time esc (layer-while-held alt-layer))
-  a (tap-hold-release-keys $tap-time $slow-hold-time (multi a @tap) @lhyper $left-hand-keys)
-  s (tap-hold-release-keys $tap-time $slow-hold-time (multi s @tap) @lmeh $left-hand-keys)
+  x (tap-hold-release-keys $tap-time $hold-time (multi x @tap) @lhyper $left-hand-keys)
+  c (tap-hold-release-keys $tap-time $hold-time (multi c @tap) @lmeh $left-hand-keys)
   d (tap-hold-release-keys $tap-time $hold-time (multi d @tap) lctl $left-hand-keys)
   f (tap-hold-release-keys $tap-time $hold-time (multi f @tap) lalt $left-hand-keys)
   j (tap-hold-release-keys $tap-time $hold-time (multi j @tap) ralt $right-hand-keys)
   k (tap-hold-release-keys $tap-time $hold-time (multi k @tap) rctl $right-hand-keys)
-  l (tap-hold-release-keys $tap-time $slow-hold-time (multi l @tap) @rmeh $right-hand-keys)
-  ; (tap-hold-release-keys $tap-time $slow-hold-time (multi ; @tap) @rhyper $right-hand-keys)
+  m (tap-hold-release-keys $tap-time $hold-time (multi m @tap) @rmeh $right-hand-keys)
+  , (tap-hold-release-keys $tap-time $hold-time (multi , @tap) @rhyper $right-hand-keys)
 )
