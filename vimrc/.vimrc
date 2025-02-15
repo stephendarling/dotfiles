@@ -19,4 +19,4 @@ inoremap <C-k> <Up>
 noremap <C-l> <Right>
 inoremap <C-l> <Right>
 
-set clipboard=unnamed
+set clipboard=unnamedplus
