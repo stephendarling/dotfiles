@@ -7,12 +7,9 @@
   caps a s d f h j k l ;
 )
 (defvar
-  ;; Note: consider using different time values for your different fingers.
-  ;; For example, your pinkies might be slower to release keys and index
-  ;; fingers faster.
-  tap-time 0
+  tap-time 150
   hold-time 125
-  slow-hold-time 185
+  slow-hold-time 200
 
   left-hand-keys (
     q w e r t
@@ -65,6 +62,6 @@
   f (tap-hold-release-keys $tap-time $hold-time (multi f @tap) lalt $left-hand-keys)
   j (tap-hold-release-keys $tap-time $hold-time (multi j @tap) ralt $right-hand-keys)
   k (tap-hold-release-keys $tap-time $hold-time (multi k @tap) rctl $right-hand-keys)
-  l (tap-hold-release-keys $tap-time $hold-time (multi l @tap) @rmeh $right-hand-keys)
-  ; (tap-hold-release-keys $tap-time $hold-time (multi ; @tap) @rhyper $right-hand-keys)
+  l (tap-hold-release-keys $tap-time $slow-hold-time (multi l @tap) @rmeh $right-hand-keys)
+  ; (tap-hold-release-keys $tap-time $slow-hold-time (multi ; @tap) @rhyper $right-hand-keys)
 )
