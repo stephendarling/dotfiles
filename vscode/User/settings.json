@@ -54,5 +54,6 @@
     },
     "files.exclude": {
         "**/*_templ.go": true
-    }
+    },
+    "html.autoClosingTags": false,
 }
