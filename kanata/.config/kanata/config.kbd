@@ -9,7 +9,7 @@
 )
 (defvar
   tap-time 0
-  hold-time 200
+  hold-time 225
 
   left-hand-keys (
     q w e r t
