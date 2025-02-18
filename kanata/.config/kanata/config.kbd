@@ -16,6 +16,7 @@
     q w e r t
     a s d f g
     z x c v
+    spc
   )
   right-hand-keys (
     y u i o p
@@ -31,12 +32,11 @@
   @esc a s @d @f h @j @k l ;
   @x @c @m @,
 )
-
 (deflayer nomods
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
   r
-  caps a s d f h j k l ;
+  esc  a s d f h j k l ;
   x c m ,
 )
 (deflayer alt-layer
