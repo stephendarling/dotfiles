@@ -62,6 +62,7 @@
 
 
   esc (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
+
   x (tap-hold-release-keys $tap-time $hold-time x @lhyper $left-hand-keys)
   c (tap-hold-release-keys $tap-time $hold-time c @lmeh $left-hand-keys)
   d (tap-hold-release-keys $tap-time $hold-time d lctl $left-hand-keys)
