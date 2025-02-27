@@ -3,7 +3,7 @@
 # skhd --restart-service
 
 alt - c : open -a 'Google Chrome'
-alt - t : open -a 'iTerm'
+alt - t : open -a 'Ghostty'
 alt - s : open -a 'Slack'
 alt - v : open -a 'Visual Studio Code'
 alt - z : open -a 'Zoom.us'
