@@ -63,9 +63,9 @@ alt-shift-equal = 'resize smart +200'
 alt-r = 'balance-sizes'
 alt-comma = 'layout accordion vertical horizontal'
 
-# move
-alt-shift-h = 'move left'
-alt-shift-l = 'move right'
+# joins
+alt-shift-h = ['join-with left', 'layout accordion vertical']
+alt-shift-l = ['join-with right', 'layout accordion vertical']
 
 # modes
 alt-shift-s = [
@@ -78,30 +78,18 @@ alt-shift-m = [
 ]
 
 [mode.move.binding]
-## standard
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
-alt-r = 'balance-sizes'
-alt-shift-minus = 'resize smart -200'
-alt-shift-equal = 'resize smart +200'
-alt-comma = 'layout accordion vertical horizontal'
 
-# join
-alt-shift-h = ['join-with left', 'layout accordion vertical']
-alt-shift-l = ['join-with right', 'layout accordion vertical']
-
-# modes
-alt-shift-s = [
-  'mode service',
-  'exec-and-forget sketchybar --set aerospace.mode label=service',
-]
-
-alt-shift-m = [
+h = [
+  'move left',
   'mode main',
   'exec-and-forget sketchybar --set aerospace.mode label=main',
 ]
+l = [
+  'move right',
+  'mode main',
+  'exec-and-forget sketchybar --set aerospace.mode label=main',
+]
+
 [mode.service.binding]
 
 esc = [
