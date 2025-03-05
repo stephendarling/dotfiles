@@ -58,61 +58,51 @@ alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
 alt-l = 'focus right'
-alt-shift-minus = 'resize smart -200'
-alt-shift-equal = 'resize smart +200'
+shift-alt-ctrl-minus = 'resize smart -200'
+shift-alt-ctrl-equal = 'resize smart +200'
 alt-r = 'balance-sizes'
 alt-comma = 'layout accordion vertical horizontal'
 
 # joins
-alt-shift-h = ['join-with left', 'layout accordion vertical']
-alt-shift-l = ['join-with right', 'layout accordion vertical']
+shift-alt-ctrl-h = ['join-with left', 'layout accordion vertical']
+shift-alt-ctrl-l = ['join-with right', 'layout accordion vertical']
+
+# moves
+alt-shift-h = 'move left'
+alt-shift-l = 'move right'
+
+alt-shift-esc = 'reload-config'
+alt-shift-r = ['flatten-workspace-tree', 'layout v_accordion']
 
 # modes
-alt-shift-s = [
-  'mode service',
-  'exec-and-forget sketchybar --set aerospace.mode label=service',
-]
-alt-shift-m = [
-  'mode move',
-  'exec-and-forget sketchybar --set aerospace.mode label=move',
-]
+# shift-alt-ctrl-s = [
+#   'mode service',
+#   'exec-and-forget sketchybar --set aerospace.mode label=service',
+# ]
 
-[mode.move.binding]
+# [mode.service.binding]
 
-h = [
-  'move left',
-  'mode main',
-  'exec-and-forget sketchybar --set aerospace.mode label=main',
-]
-l = [
-  'move right',
-  'mode main',
-  'exec-and-forget sketchybar --set aerospace.mode label=main',
-]
+# esc = [
+#   'reload-config',
+#   'mode main',
+#   'exec-and-forget sketchybar --set aerospace.mode label=main',
+# ]
 
-[mode.service.binding]
+# r = [
+#   'flatten-workspace-tree',
+#   'layout v_accordion',
+#   'mode main',
+#   'exec-and-forget sketchybar --set aerospace.mode label=main',
+# ] # reset layout
 
-esc = [
-  'reload-config',
-  'mode main',
-  'exec-and-forget sketchybar --set aerospace.mode label=main',
-]
+# f = [
+#   'layout floating tiling',
+#   'mode main',
+#   'exec-and-forget sketchybar --set aerospace.mode label=main',
+# ] # Toggle between floating and tiling layout
 
-r = [
-  'flatten-workspace-tree',
-  'layout v_accordion',
-  'mode main',
-  'exec-and-forget sketchybar --set aerospace.mode label=main',
-] # reset layout
-
-f = [
-  'layout floating tiling',
-  'mode main',
-  'exec-and-forget sketchybar --set aerospace.mode label=main',
-] # Toggle between floating and tiling layout
-
-backspace = [
-  'close-all-windows-but-current',
-  'mode main',
-  'exec-and-forget sketchybar --set aerospace.mode label=main',
-]
+# backspace = [
+#   'close-all-windows-but-current',
+#   'mode main',
+#   'exec-and-forget sketchybar --set aerospace.mode label=main',
+# ]
