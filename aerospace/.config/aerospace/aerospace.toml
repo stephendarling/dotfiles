@@ -49,7 +49,7 @@ inner.horizontal = 10
 inner.vertical = 10
 outer.left = 10
 outer.bottom = 10
-outer.top = 50
+outer.top = 15
 outer.right = 10
 
 [mode.main.binding]
@@ -58,10 +58,11 @@ alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
 alt-l = 'focus right'
-shift-alt-ctrl-minus = 'resize smart -200'
-shift-alt-ctrl-equal = 'resize smart +200'
+alt-minus = 'resize smart -200'
+alt-equal = 'resize smart +200'
 alt-r = 'balance-sizes'
-alt-comma = 'layout accordion vertical horizontal'
+alt-shift-comma = 'layout accordion vertical horizontal'
+alt-shift-slash = 'layout tiles vertical horizontal'
 
 # joins
 shift-alt-ctrl-h = ['join-with left', 'layout accordion vertical']
@@ -71,7 +72,7 @@ shift-alt-ctrl-l = ['join-with right', 'layout accordion vertical']
 alt-shift-h = 'move left'
 alt-shift-l = 'move right'
 
-alt-shift-esc = 'reload-config'
+alt-shift-esc = ['reload-config']
 alt-shift-r = ['flatten-workspace-tree', 'layout v_accordion']
 
 # modes
