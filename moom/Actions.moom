@@ -22,9 +22,9 @@
 				<key>Key Code</key>
 				<integer>4</integer>
 				<key>Modifier Flags</key>
-				<integer>655650</integer>
+				<integer>1966379</integer>
 				<key>Visual Representation</key>
-				<string>⌥⇧H</string>
+				<string>⌃⌥⇧⌘H</string>
 			</dict>
 			<key>Identifier</key>
 			<string>CDACEB07-098C-47B3-B9AA-E4D00541555D</string>
@@ -122,9 +122,9 @@
 				<key>Key Code</key>
 				<integer>37</integer>
 				<key>Modifier Flags</key>
-				<integer>655650</integer>
+				<integer>1966379</integer>
 				<key>Visual Representation</key>
-				<string>⌥⇧L</string>
+				<string>⌃⌥⇧⌘L</string>
 			</dict>
 			<key>Identifier</key>
 			<string>A259E21C-0B17-4985-95D7-AF0C109FDB01</string>
@@ -222,9 +222,9 @@
 				<key>Key Code</key>
 				<integer>46</integer>
 				<key>Modifier Flags</key>
-				<integer>655650</integer>
+				<integer>1966379</integer>
 				<key>Visual Representation</key>
-				<string>⌥⇧M</string>
+				<string>⌃⌥⇧⌘M</string>
 			</dict>
 			<key>Identifier</key>
 			<string>C18717C1-6EF9-46DC-85D1-2E3ECB88C79D</string>
