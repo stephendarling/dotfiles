@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Custom Controls (4001)</key>
+	<array>
+		<dict>
+			<key>Action</key>
+			<integer>1001</integer>
+			<key>Apply to Overlapping Windows</key>
+			<true/>
+			<key>Auto-Trigger</key>
+			<true/>
+			<key>Auto-Trigger Display Count</key>
+			<integer>1</integer>
+			<key>Generic</key>
+			<true/>
+			<key>Hot Key</key>
+			<dict>
+				<key>Identifier</key>
+				<string>9C5B06E2-1412-4DDB-ABA9-F21B828CF517</string>
+				<key>Key Code</key>
+				<integer>4</integer>
+				<key>Modifier Flags</key>
+				<integer>655650</integer>
+				<key>Visual Representation</key>
+				<string>⌥⇧H</string>
+			</dict>
+			<key>Identifier</key>
+			<string>9C5B06E2-1412-4DDB-ABA9-F21B828CF517</string>
+			<key>Snapshot</key>
+			<array>
+				<dict>
+					<key>Application Name</key>
+					<string>Google Chrome</string>
+					<key>Available Screen Frame</key>
+					<string>{{64, 0}, {3776, 1575}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.google.chrome</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {3840, 1600}}</string>
+					<key>Window Frame</key>
+					<string>{{64, 0}, {1888, 1575}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>Custom Actions - Google Chrome - Stephen (Personal)</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Slack</string>
+					<key>Available Screen Frame</key>
+					<string>{{64, 0}, {3776, 1575}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.tinyspeck.slackmacgap</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {3840, 1600}}</string>
+					<key>Window Frame</key>
+					<string>{{1953, 0}, {1887, 1575}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>ben, david (DM) - Fiat Insight - Slack</string>
+				</dict>
+			</array>
+			<key>Snapshot Screens</key>
+			<array>
+				<string>{{0, 0}, {3840, 1600}}</string>
+			</array>
+			<key>Stubborn</key>
+			<false/>
+			<key>Title</key>
+			<string>Ultrawide Default / Move Left (2)</string>
+		</dict>
+		<dict>
+			<key>Action</key>
+			<integer>1001</integer>
+			<key>Apply to Overlapping Windows</key>
+			<true/>
+			<key>Auto-Trigger</key>
+			<false/>
+			<key>Auto-Trigger Display Count</key>
+			<integer>1</integer>
+			<key>Generic</key>
+			<true/>
+			<key>Hot Key</key>
+			<dict>
+				<key>Identifier</key>
+				<string>B1B96CAB-3F3D-42E4-A37C-89CF80C389DE</string>
+				<key>Key Code</key>
+				<integer>37</integer>
+				<key>Modifier Flags</key>
+				<integer>655650</integer>
+				<key>Visual Representation</key>
+				<string>⌥⇧L</string>
+			</dict>
+			<key>Identifier</key>
+			<string>B1B96CAB-3F3D-42E4-A37C-89CF80C389DE</string>
+			<key>Snapshot</key>
+			<array>
+				<dict>
+					<key>Application Name</key>
+					<string>Slack</string>
+					<key>Available Screen Frame</key>
+					<string>{{64, 0}, {3776, 1575}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.tinyspeck.slackmacgap</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {3840, 1600}}</string>
+					<key>Window Frame</key>
+					<string>{{1955, 4}, {1881, 1567}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>ben, david (DM) - Fiat Insight - Slack</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Google Chrome</string>
+					<key>Available Screen Frame</key>
+					<string>{{64, 0}, {3776, 1575}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.google.chrome</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {3840, 1600}}</string>
+					<key>Window Frame</key>
+					<string>{{68, 4}, {1882, 1567}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>Tips, Tricks, and Tidbits - Google Chrome - Stephen (Personal)</string>
+				</dict>
+			</array>
+			<key>Snapshot Screens</key>
+			<array>
+				<string>{{0, 0}, {3840, 1600}}</string>
+			</array>
+			<key>Stubborn</key>
+			<false/>
+			<key>Title</key>
+			<string>Move Right (2)</string>
+		</dict>
+		<dict>
+			<key>Action</key>
+			<integer>1001</integer>
+			<key>Apply to Overlapping Windows</key>
+			<true/>
+			<key>Auto-Trigger</key>
+			<true/>
+			<key>Auto-Trigger Display Count</key>
+			<integer>0</integer>
+			<key>Generic</key>
+			<true/>
+			<key>Hot Key</key>
+			<dict>
+				<key>Identifier</key>
+				<string>C3D5D326-5388-4C9D-94FA-A3D433445661</string>
+				<key>Key Code</key>
+				<integer>46</integer>
+				<key>Modifier Flags</key>
+				<integer>655650</integer>
+				<key>Visual Representation</key>
+				<string>⌥⇧M</string>
+			</dict>
+			<key>Identifier</key>
+			<string>C3D5D326-5388-4C9D-94FA-A3D433445661</string>
+			<key>Snapshot</key>
+			<array>
+				<dict>
+					<key>Application Name</key>
+					<string>Google Chrome</string>
+					<key>Available Screen Frame</key>
+					<string>{{64, 0}, {1664, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.google.chrome</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{64, 0}, {1664, 1079}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>Custom Actions - Google Chrome - Stephen (Personal)</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Slack</string>
+					<key>Available Screen Frame</key>
+					<string>{{64, 0}, {1664, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.tinyspeck.slackmacgap</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{63, 12}, {1665, 1055}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>ben, david (DM) - Fiat Insight - Slack</string>
+				</dict>
+			</array>
+			<key>Snapshot Screens</key>
+			<array>
+				<string>{{0, 0}, {1728, 1117}}</string>
+			</array>
+			<key>Stubborn</key>
+			<false/>
+			<key>Title</key>
+			<string>Macbook Pro / Full Screen (1)</string>
+		</dict>
+	</array>
+</dict>
+</plist>
