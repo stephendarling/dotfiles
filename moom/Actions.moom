@@ -8,7 +8,7 @@
 			<key>Action</key>
 			<integer>1001</integer>
 			<key>Apply to Overlapping Windows</key>
-			<true/>
+			<false/>
 			<key>Auto-Trigger</key>
 			<true/>
 			<key>Auto-Trigger Display Count</key>
@@ -18,7 +18,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>9C5B06E2-1412-4DDB-ABA9-F21B828CF517</string>
+				<string>6BCF59BD-F5AE-4557-8055-719442F599FB</string>
 				<key>Key Code</key>
 				<integer>4</integer>
 				<key>Modifier Flags</key>
@@ -27,45 +27,109 @@
 				<string>⌥⇧H</string>
 			</dict>
 			<key>Identifier</key>
-			<string>9C5B06E2-1412-4DDB-ABA9-F21B828CF517</string>
+			<string>6BCF59BD-F5AE-4557-8055-719442F599FB</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
 					<key>Application Name</key>
 					<string>Google Chrome</string>
 					<key>Available Screen Frame</key>
-					<string>{{64, 0}, {3776, 1575}}</string>
+					<string>{{65, 0}, {1663, 1079}}</string>
 					<key>Bundle Identifier</key>
 					<string>com.google.chrome</string>
 					<key>Screen Frame</key>
-					<string>{{0, 0}, {3840, 1600}}</string>
+					<string>{{0, 0}, {1728, 1117}}</string>
 					<key>Window Frame</key>
-					<string>{{64, 0}, {1888, 1575}}</string>
+					<string>{{69, 5}, {825, 1069}}</string>
 					<key>Window Subrole</key>
 					<string>AXStandardWindow</string>
 					<key>Window Title</key>
-					<string>Custom Actions - Google Chrome - Stephen (Personal)</string>
+					<string>Inbox (18,802) - stephen.darling@dailypay.com - DailyPay Mail - Google Chrome - Stephen (DailyPay)</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Code</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.microsoft.vscode</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{898, 5}, {825, 1069}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>dotfiles</string>
 				</dict>
 				<dict>
 					<key>Application Name</key>
 					<string>Slack</string>
 					<key>Available Screen Frame</key>
-					<string>{{64, 0}, {3776, 1575}}</string>
+					<string>{{65, 0}, {1663, 1079}}</string>
 					<key>Bundle Identifier</key>
 					<string>com.tinyspeck.slackmacgap</string>
 					<key>Screen Frame</key>
-					<string>{{0, 0}, {3840, 1600}}</string>
+					<string>{{0, 0}, {1728, 1117}}</string>
 					<key>Window Frame</key>
-					<string>{{1953, 0}, {1887, 1575}}</string>
+					<string>{{901, 8}, {820, 1063}}</string>
 					<key>Window Subrole</key>
 					<string>AXStandardWindow</string>
 					<key>Window Title</key>
-					<string>ben, david (DM) - Fiat Insight - Slack</string>
+					<string>Activity - DailyPay, Inc. - Slack</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Ghostty</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.mitchellh.ghostty</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{69, 46}, {800, 628}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>~/dev/dotfiles</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Todoist</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.todoist.mac.todoist</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{64, 49}, {1654, 1030}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>Today</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Self Service</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.jamfsoftware.selfservice.mac</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{69, 6}, {1654, 1029}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>DailyPay Self Service</string>
 				</dict>
 			</array>
 			<key>Snapshot Screens</key>
 			<array>
-				<string>{{0, 0}, {3840, 1600}}</string>
+				<string>{{0, 0}, {1728, 1117}}</string>
 			</array>
 			<key>Stubborn</key>
 			<false/>
@@ -76,7 +140,7 @@
 			<key>Action</key>
 			<integer>1001</integer>
 			<key>Apply to Overlapping Windows</key>
-			<true/>
+			<false/>
 			<key>Auto-Trigger</key>
 			<false/>
 			<key>Auto-Trigger Display Count</key>
@@ -86,7 +150,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>B1B96CAB-3F3D-42E4-A37C-89CF80C389DE</string>
+				<string>2776CD29-1AEB-499F-B13C-C299AD9A9A53</string>
 				<key>Key Code</key>
 				<integer>37</integer>
 				<key>Modifier Flags</key>
@@ -95,45 +159,109 @@
 				<string>⌥⇧L</string>
 			</dict>
 			<key>Identifier</key>
-			<string>B1B96CAB-3F3D-42E4-A37C-89CF80C389DE</string>
+			<string>2776CD29-1AEB-499F-B13C-C299AD9A9A53</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
 					<key>Application Name</key>
-					<string>Slack</string>
+					<string>Code</string>
 					<key>Available Screen Frame</key>
-					<string>{{64, 0}, {3776, 1575}}</string>
+					<string>{{65, 0}, {1663, 1079}}</string>
 					<key>Bundle Identifier</key>
-					<string>com.tinyspeck.slackmacgap</string>
+					<string>com.microsoft.vscode</string>
 					<key>Screen Frame</key>
-					<string>{{0, 0}, {3840, 1600}}</string>
+					<string>{{0, 0}, {1728, 1117}}</string>
 					<key>Window Frame</key>
-					<string>{{1955, 4}, {1881, 1567}}</string>
+					<string>{{898, 5}, {825, 1069}}</string>
 					<key>Window Subrole</key>
 					<string>AXStandardWindow</string>
 					<key>Window Title</key>
-					<string>ben, david (DM) - Fiat Insight - Slack</string>
+					<string>dotfiles</string>
 				</dict>
 				<dict>
 					<key>Application Name</key>
 					<string>Google Chrome</string>
 					<key>Available Screen Frame</key>
-					<string>{{64, 0}, {3776, 1575}}</string>
+					<string>{{65, 0}, {1663, 1079}}</string>
 					<key>Bundle Identifier</key>
 					<string>com.google.chrome</string>
 					<key>Screen Frame</key>
-					<string>{{0, 0}, {3840, 1600}}</string>
+					<string>{{0, 0}, {1728, 1117}}</string>
 					<key>Window Frame</key>
-					<string>{{68, 4}, {1882, 1567}}</string>
+					<string>{{69, 5}, {825, 1069}}</string>
 					<key>Window Subrole</key>
 					<string>AXStandardWindow</string>
 					<key>Window Title</key>
-					<string>Tips, Tricks, and Tidbits - Google Chrome - Stephen (Personal)</string>
+					<string>Inbox (18,802) - stephen.darling@dailypay.com - DailyPay Mail - Google Chrome - Stephen (DailyPay)</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Slack</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.tinyspeck.slackmacgap</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{901, 8}, {820, 1063}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>Activity - DailyPay, Inc. - Slack</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Ghostty</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.mitchellh.ghostty</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{69, 46}, {800, 628}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>~/dev/dotfiles</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Todoist</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.todoist.mac.todoist</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{64, 49}, {1654, 1030}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>Today</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Self Service</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.jamfsoftware.selfservice.mac</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{69, 6}, {1654, 1029}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>DailyPay Self Service</string>
 				</dict>
 			</array>
 			<key>Snapshot Screens</key>
 			<array>
-				<string>{{0, 0}, {3840, 1600}}</string>
+				<string>{{0, 0}, {1728, 1117}}</string>
 			</array>
 			<key>Stubborn</key>
 			<false/>
@@ -144,7 +272,7 @@
 			<key>Action</key>
 			<integer>1001</integer>
 			<key>Apply to Overlapping Windows</key>
-			<true/>
+			<false/>
 			<key>Auto-Trigger</key>
 			<true/>
 			<key>Auto-Trigger Display Count</key>
@@ -154,7 +282,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>C3D5D326-5388-4C9D-94FA-A3D433445661</string>
+				<string>0E524ACD-CB8E-4D61-8115-1D950150FA96</string>
 				<key>Key Code</key>
 				<integer>46</integer>
 				<key>Modifier Flags</key>
@@ -163,40 +291,104 @@
 				<string>⌥⇧M</string>
 			</dict>
 			<key>Identifier</key>
-			<string>C3D5D326-5388-4C9D-94FA-A3D433445661</string>
+			<string>0E524ACD-CB8E-4D61-8115-1D950150FA96</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
 					<key>Application Name</key>
 					<string>Google Chrome</string>
 					<key>Available Screen Frame</key>
-					<string>{{64, 0}, {1664, 1079}}</string>
+					<string>{{65, 0}, {1663, 1079}}</string>
 					<key>Bundle Identifier</key>
 					<string>com.google.chrome</string>
 					<key>Screen Frame</key>
 					<string>{{0, 0}, {1728, 1117}}</string>
 					<key>Window Frame</key>
-					<string>{{64, 0}, {1664, 1079}}</string>
+					<string>{{69, 5}, {1654, 1069}}</string>
 					<key>Window Subrole</key>
 					<string>AXStandardWindow</string>
 					<key>Window Title</key>
-					<string>Custom Actions - Google Chrome - Stephen (Personal)</string>
+					<string>Inbox (18,802) - stephen.darling@dailypay.com - DailyPay Mail - Google Chrome - Stephen (DailyPay)</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Code</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.microsoft.vscode</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{898, 5}, {825, 1069}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>dotfiles</string>
 				</dict>
 				<dict>
 					<key>Application Name</key>
 					<string>Slack</string>
 					<key>Available Screen Frame</key>
-					<string>{{64, 0}, {1664, 1079}}</string>
+					<string>{{65, 0}, {1663, 1079}}</string>
 					<key>Bundle Identifier</key>
 					<string>com.tinyspeck.slackmacgap</string>
 					<key>Screen Frame</key>
 					<string>{{0, 0}, {1728, 1117}}</string>
 					<key>Window Frame</key>
-					<string>{{63, 12}, {1665, 1055}}</string>
+					<string>{{901, 8}, {820, 1063}}</string>
 					<key>Window Subrole</key>
 					<string>AXStandardWindow</string>
 					<key>Window Title</key>
-					<string>ben, david (DM) - Fiat Insight - Slack</string>
+					<string>Activity - DailyPay, Inc. - Slack</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Ghostty</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.mitchellh.ghostty</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{69, 46}, {800, 628}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>~/dev/dotfiles</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Todoist</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.todoist.mac.todoist</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{64, 49}, {1654, 1030}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>Today</string>
+				</dict>
+				<dict>
+					<key>Application Name</key>
+					<string>Self Service</string>
+					<key>Available Screen Frame</key>
+					<string>{{65, 0}, {1663, 1079}}</string>
+					<key>Bundle Identifier</key>
+					<string>com.jamfsoftware.selfservice.mac</string>
+					<key>Screen Frame</key>
+					<string>{{0, 0}, {1728, 1117}}</string>
+					<key>Window Frame</key>
+					<string>{{69, 6}, {1654, 1029}}</string>
+					<key>Window Subrole</key>
+					<string>AXStandardWindow</string>
+					<key>Window Title</key>
+					<string>DailyPay Self Service</string>
 				</dict>
 			</array>
 			<key>Snapshot Screens</key>
