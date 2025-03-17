@@ -8,7 +8,7 @@
 			<key>Action</key>
 			<integer>1001</integer>
 			<key>Apply to Overlapping Windows</key>
-			<true/>
+			<false/>
 			<key>Auto-Trigger</key>
 			<true/>
 			<key>Auto-Trigger Display Count</key>
@@ -124,7 +124,7 @@
 			<key>Action</key>
 			<integer>1001</integer>
 			<key>Apply to Overlapping Windows</key>
-			<true/>
+			<false/>
 			<key>Auto-Trigger</key>
 			<false/>
 			<key>Auto-Trigger Display Count</key>
@@ -240,7 +240,7 @@
 			<key>Action</key>
 			<integer>1001</integer>
 			<key>Apply to Overlapping Windows</key>
-			<true/>
+			<false/>
 			<key>Auto-Trigger</key>
 			<true/>
 			<key>Auto-Trigger Display Count</key>
