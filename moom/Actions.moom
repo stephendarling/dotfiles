@@ -18,7 +18,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>D4A92C0F-5C91-4B88-89AE-7B7DEBAA0335</string>
+				<string>82D12521-768A-48DF-B7F1-AD687B662B91</string>
 				<key>Key Code</key>
 				<integer>4</integer>
 				<key>Modifier Flags</key>
@@ -27,7 +27,7 @@
 				<string>⌥⇧H</string>
 			</dict>
 			<key>Identifier</key>
-			<string>D4A92C0F-5C91-4B88-89AE-7B7DEBAA0335</string>
+			<string>82D12521-768A-48DF-B7F1-AD687B662B91</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
@@ -166,7 +166,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>01C56005-2649-4BEB-8B69-97EC1107AA47</string>
+				<string>F0F83982-6AF7-4FC6-B124-131BE0535A9F</string>
 				<key>Key Code</key>
 				<integer>37</integer>
 				<key>Modifier Flags</key>
@@ -175,7 +175,7 @@
 				<string>⌥⇧L</string>
 			</dict>
 			<key>Identifier</key>
-			<string>01C56005-2649-4BEB-8B69-97EC1107AA47</string>
+			<string>F0F83982-6AF7-4FC6-B124-131BE0535A9F</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
@@ -314,7 +314,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>3531ED93-F104-4AB1-8CA9-46B43AE98A00</string>
+				<string>19B37297-DDA1-447B-92A4-01D8F9DA767F</string>
 				<key>Key Code</key>
 				<integer>46</integer>
 				<key>Modifier Flags</key>
@@ -323,7 +323,7 @@
 				<string>⌥⇧M</string>
 			</dict>
 			<key>Identifier</key>
-			<string>3531ED93-F104-4AB1-8CA9-46B43AE98A00</string>
+			<string>19B37297-DDA1-447B-92A4-01D8F9DA767F</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
@@ -461,7 +461,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>DFE3727B-4D31-46CA-B0BF-549D733D359B</string>
+				<string>162CAB7C-01C2-49D3-BCFE-631AFDC6D289</string>
 				<key>Key Code</key>
 				<integer>37</integer>
 				<key>Modifier Flags</key>
@@ -470,9 +470,9 @@
 				<string>⌥⌘L</string>
 			</dict>
 			<key>Identifier</key>
-			<string>DFE3727B-4D31-46CA-B0BF-549D733D359B</string>
+			<string>162CAB7C-01C2-49D3-BCFE-631AFDC6D289</string>
 			<key>Relative Frame</key>
-			<string>{{0.5, 0}, {0.5, 1}}</string>
+			<string>{{0.50060827250608275, -0.0018885741265344666}, {0.5012165450121655, 1.0037771482530689}}</string>
 			<key>Title</key>
 			<string>Move Right</string>
 			<key>Window Description</key>
@@ -480,17 +480,17 @@
 				<key>Application Name</key>
 				<string>Google Chrome</string>
 				<key>Available Screen Frame</key>
-				<string>{{65, 0}, {1663, 1079}}</string>
+				<string>{{64, 0}, {1664, 1079}}</string>
 				<key>Bundle Identifier</key>
 				<string>com.google.chrome</string>
 				<key>Screen Frame</key>
 				<string>{{0, 0}, {1728, 1117}}</string>
 				<key>Window Frame</key>
-				<string>{{74, 10}, {1644, 1059}}</string>
+				<string>{{902, 8}, {819, 1063}}</string>
 				<key>Window Subrole</key>
 				<string>AXStandardWindow</string>
 				<key>Window Title</key>
-				<string>Overview of Moom - Google Chrome - Stephen (DailyPay)</string>
+				<string>Download Discord to Talk, Play, and Hang Out - Google Chrome - Stephen (Personal)</string>
 			</dict>
 		</dict>
 		<dict>
@@ -506,7 +506,7 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>52002CFE-3339-4620-BA33-65AAC34F4026</string>
+				<string>8825DCF0-0C7A-446E-94A1-3FF56F4A4C89</string>
 				<key>Key Code</key>
 				<integer>4</integer>
 				<key>Modifier Flags</key>
@@ -515,9 +515,9 @@
 				<string>⌥⌘H</string>
 			</dict>
 			<key>Identifier</key>
-			<string>52002CFE-3339-4620-BA33-65AAC34F4026</string>
+			<string>8825DCF0-0C7A-446E-94A1-3FF56F4A4C89</string>
 			<key>Relative Frame</key>
-			<string>{{0, 0}, {0.5, 1}}</string>
+			<string>{{-0.0018248175182481751, -0.0018885741265344666}, {0.5024330900243309, 1.0037771482530689}}</string>
 			<key>Title</key>
 			<string>Move Left</string>
 			<key>Window Description</key>
@@ -525,17 +525,17 @@
 				<key>Application Name</key>
 				<string>Google Chrome</string>
 				<key>Available Screen Frame</key>
-				<string>{{65, 0}, {1663, 1079}}</string>
+				<string>{{64, 0}, {1664, 1079}}</string>
 				<key>Bundle Identifier</key>
 				<string>com.google.chrome</string>
 				<key>Screen Frame</key>
 				<string>{{0, 0}, {1728, 1117}}</string>
 				<key>Window Frame</key>
-				<string>{{74, 10}, {1644, 1059}}</string>
+				<string>{{71, 8}, {821, 1063}}</string>
 				<key>Window Subrole</key>
 				<string>AXStandardWindow</string>
 				<key>Window Title</key>
-				<string>Overview of Moom - Google Chrome - Stephen (DailyPay)</string>
+				<string>Download Discord to Talk, Play, and Hang Out - Google Chrome - Stephen (Personal)</string>
 			</dict>
 		</dict>
 	</array>
