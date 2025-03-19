@@ -18,16 +18,16 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>CDACEB07-098C-47B3-B9AA-E4D00541555D</string>
+				<string>D4A92C0F-5C91-4B88-89AE-7B7DEBAA0335</string>
 				<key>Key Code</key>
 				<integer>4</integer>
 				<key>Modifier Flags</key>
-				<integer>1966379</integer>
+				<integer>655650</integer>
 				<key>Visual Representation</key>
-				<string>⌃⌥⇧⌘H</string>
+				<string>⌥⇧H</string>
 			</dict>
 			<key>Identifier</key>
-			<string>CDACEB07-098C-47B3-B9AA-E4D00541555D</string>
+			<string>D4A92C0F-5C91-4B88-89AE-7B7DEBAA0335</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
@@ -102,7 +102,97 @@
 			<key>Stubborn</key>
 			<false/>
 			<key>Title</key>
-			<string>Ultrawide Default / Move Left (2)</string>
+			<string>Ultrawide Default / Left Split (2)</string>
+		</dict>
+		<dict>
+			<key>Action</key>
+			<integer>19</integer>
+			<key>Configuration Grid</key>
+			<dict>
+				<key>Configuration Grid: Columns</key>
+				<integer>6</integer>
+				<key>Configuration Grid: Rows</key>
+				<integer>4</integer>
+			</dict>
+			<key>Hot Key</key>
+			<dict>
+				<key>Identifier</key>
+				<string>DFE3727B-4D31-46CA-B0BF-549D733D359B</string>
+				<key>Key Code</key>
+				<integer>37</integer>
+				<key>Modifier Flags</key>
+				<integer>1573160</integer>
+				<key>Visual Representation</key>
+				<string>⌥⌘L</string>
+			</dict>
+			<key>Identifier</key>
+			<string>DFE3727B-4D31-46CA-B0BF-549D733D359B</string>
+			<key>Relative Frame</key>
+			<string>{{0.5, 0}, {0.5, 1}}</string>
+			<key>Title</key>
+			<string>Move Right</string>
+			<key>Window Description</key>
+			<dict>
+				<key>Application Name</key>
+				<string>Google Chrome</string>
+				<key>Available Screen Frame</key>
+				<string>{{65, 0}, {1663, 1079}}</string>
+				<key>Bundle Identifier</key>
+				<string>com.google.chrome</string>
+				<key>Screen Frame</key>
+				<string>{{0, 0}, {1728, 1117}}</string>
+				<key>Window Frame</key>
+				<string>{{74, 10}, {1644, 1059}}</string>
+				<key>Window Subrole</key>
+				<string>AXStandardWindow</string>
+				<key>Window Title</key>
+				<string>Overview of Moom - Google Chrome - Stephen (DailyPay)</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Action</key>
+			<integer>19</integer>
+			<key>Configuration Grid</key>
+			<dict>
+				<key>Configuration Grid: Columns</key>
+				<integer>6</integer>
+				<key>Configuration Grid: Rows</key>
+				<integer>4</integer>
+			</dict>
+			<key>Hot Key</key>
+			<dict>
+				<key>Identifier</key>
+				<string>52002CFE-3339-4620-BA33-65AAC34F4026</string>
+				<key>Key Code</key>
+				<integer>4</integer>
+				<key>Modifier Flags</key>
+				<integer>1573160</integer>
+				<key>Visual Representation</key>
+				<string>⌥⌘H</string>
+			</dict>
+			<key>Identifier</key>
+			<string>52002CFE-3339-4620-BA33-65AAC34F4026</string>
+			<key>Relative Frame</key>
+			<string>{{0, 0}, {0.5, 1}}</string>
+			<key>Title</key>
+			<string>Move Left</string>
+			<key>Window Description</key>
+			<dict>
+				<key>Application Name</key>
+				<string>Google Chrome</string>
+				<key>Available Screen Frame</key>
+				<string>{{65, 0}, {1663, 1079}}</string>
+				<key>Bundle Identifier</key>
+				<string>com.google.chrome</string>
+				<key>Screen Frame</key>
+				<string>{{0, 0}, {1728, 1117}}</string>
+				<key>Window Frame</key>
+				<string>{{74, 10}, {1644, 1059}}</string>
+				<key>Window Subrole</key>
+				<string>AXStandardWindow</string>
+				<key>Window Title</key>
+				<string>Overview of Moom - Google Chrome - Stephen (DailyPay)</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>Action</key>
@@ -118,16 +208,16 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>A259E21C-0B17-4985-95D7-AF0C109FDB01</string>
+				<string>01C56005-2649-4BEB-8B69-97EC1107AA47</string>
 				<key>Key Code</key>
 				<integer>37</integer>
 				<key>Modifier Flags</key>
-				<integer>1966379</integer>
+				<integer>655650</integer>
 				<key>Visual Representation</key>
-				<string>⌃⌥⇧⌘L</string>
+				<string>⌥⇧L</string>
 			</dict>
 			<key>Identifier</key>
-			<string>A259E21C-0B17-4985-95D7-AF0C109FDB01</string>
+			<string>01C56005-2649-4BEB-8B69-97EC1107AA47</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
@@ -202,7 +292,7 @@
 			<key>Stubborn</key>
 			<false/>
 			<key>Title</key>
-			<string>Move Right (2)</string>
+			<string>Right Split</string>
 		</dict>
 		<dict>
 			<key>Action</key>
@@ -218,16 +308,16 @@
 			<key>Hot Key</key>
 			<dict>
 				<key>Identifier</key>
-				<string>C18717C1-6EF9-46DC-85D1-2E3ECB88C79D</string>
+				<string>3531ED93-F104-4AB1-8CA9-46B43AE98A00</string>
 				<key>Key Code</key>
 				<integer>46</integer>
 				<key>Modifier Flags</key>
-				<integer>1966379</integer>
+				<integer>655650</integer>
 				<key>Visual Representation</key>
-				<string>⌃⌥⇧⌘M</string>
+				<string>⌥⇧M</string>
 			</dict>
 			<key>Identifier</key>
-			<string>C18717C1-6EF9-46DC-85D1-2E3ECB88C79D</string>
+			<string>3531ED93-F104-4AB1-8CA9-46B43AE98A00</string>
 			<key>Snapshot</key>
 			<array>
 				<dict>
