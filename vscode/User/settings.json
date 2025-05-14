@@ -56,4 +56,5 @@
         "**/*_templ.go": true
     },
     "html.autoClosingTags": false,
+    "githubPullRequests.pullBranch": "never",
 }

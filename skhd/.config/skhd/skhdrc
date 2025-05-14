@@ -5,8 +5,6 @@
 alt - b : open -a 'Google Chrome'
 alt - t : open -a 'Ghostty'
 alt - s : open -a 'Slack'
-alt - v : open -a 'Visual Studio Code'
-alt - z : open -a 'Zoom.us'
-alt - l : open -a 'Todoist'
+alt - v : code
 alt - c : open -a 'Fantastical'
-alt - m : open -a 'Moom'
+alt - 1 : open -a '1Password'
