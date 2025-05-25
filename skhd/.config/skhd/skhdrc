@@ -2,9 +2,6 @@
 # To update any of these config, make the changes here and restart the skhd process with
 # skhd --restart-service
 
-alt - b : open -a 'Google Chrome'
+alt - g : open -a 'Google Chrome'
 alt - t : open -a 'Ghostty'
 alt - s : open -a 'Slack'
-alt - v : code
-alt - c : open -a 'Fantastical'
-alt - 1 : open -a '1Password'
