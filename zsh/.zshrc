@@ -129,3 +129,4 @@ export PATH="$PATH:$HOME/.config/bin"
 alias gs="git status"
 alias ga="git add -A"
 alias gcm="git commit -m"
+
