@@ -10,7 +10,8 @@
 )
 (defvar
   tap-time 300
-  hold-time 250
+  hold-time 200
+  hold-time-slow 300
 
   left-hand-keys (
     q w e r t
@@ -53,10 +54,10 @@
 
   esc (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
 
-  x (tap-hold-release-keys $tap-time $hold-time x @lhyper $left-hand-keys)
+  x (tap-hold-release-keys $tap-time $hold-time-slow x @lhyper $left-hand-keys)
   d (tap-hold-release-keys $tap-time $hold-time d lctl $left-hand-keys)
   f (tap-hold-release-keys $tap-time $hold-time f lalt $left-hand-keys)
   j (tap-hold-release-keys $tap-time $hold-time j ralt $right-hand-keys)
   k (tap-hold-release-keys $tap-time $hold-time k rctl $right-hand-keys)
-  , (tap-hold-release-keys $tap-time $hold-time , @rhyper $right-hand-keys)
+  , (tap-hold-release-keys $tap-time $hold-time-slow , @rhyper $right-hand-keys)
 )
