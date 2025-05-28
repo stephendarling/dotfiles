@@ -1,6 +1,8 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.editor.fzf"
+    "lazyvim.plugins.extras.editor.fzf",
+    "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.terraform"
   ],
   "install_version": 8,
   "news": {

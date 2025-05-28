@@ -114,10 +114,14 @@ source $ZSH/oh-my-zsh.sh
 
 # source secrets
 source ~/.private/secrets/dailypay.sh
+source ~/.private/secrets/personal.sh
+
 eval "$(/Users/stephendarling/.local/bin/mise activate zsh)"
 
-export AWS_PROFILE="infrastructure-staging"
+export AWS_PROFILE="infrastructure-admin"
 alias awsps='export AWS_PROFILE=$(dp awsso li profiles | fzf)'
+alias awsl='AWS_PROFILE=infrastructure-staging aws sso login'
+alias awsw='aws sts get-caller-identity'
 
 
 export PATH="$PATH:$HOME/.config/bin"
