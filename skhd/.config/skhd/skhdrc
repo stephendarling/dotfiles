@@ -5,3 +5,4 @@
 alt - g : open -a 'Google Chrome'
 alt - t : open -a 'Ghostty'
 alt - s : open -a 'Slack'
+alt - z : open -a 'Zoom.us'
