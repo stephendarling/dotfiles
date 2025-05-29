@@ -4,7 +4,7 @@
 (defsrc
   f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 
   0
-  r
+  tab r
   caps d f h j k l 
   x ,
 )
@@ -28,21 +28,21 @@
 (deflayer base
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
-  r
-  @esc @d @f h @j @k l 
+  @tab r
+  lctl @d @f h @j @k l 
   @x @,
 )
 (deflayer nomods
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
-  r
-  esc  d f h j k l 
+  tab r
+  lctl  d f h j k l 
   x ,
 )
 (deflayer alt-layer
   brdn brup _  _  _  _  prev pp next mute vold volu
   caps
-  lrld
+  - lrld
   _    _ _ left down up right 
   _ _
 )
@@ -52,7 +52,7 @@
   rhyper (multi rsft ralt rctl rmet)
 
 
-  esc (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
+  tab (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
 
   x (tap-hold-release-keys $tap-time $hold-time-slow x @lhyper $left-hand-keys)
   d (tap-hold-release-keys $tap-time $hold-time d lctl $left-hand-keys)
