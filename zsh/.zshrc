@@ -136,5 +136,5 @@ export PATH="$PATH:$HOME/.config/bin"
 alias gs="git status"
 alias ga="git add -A"
 alias gcm="git commit -m"
-alias hist='history | awk '\''{ $1=""; sub(/^[ \t]+/, ""); print }'\'' | tac | awk '\''!seen[$0]++'\'' | fzf --height 40% --layout=reverse --border --prompt="History > " --bind '\''enter:execute-silent(echo -n {} | pbcopy)+abort'\'''
+alias hist='history | awk '\''{ $1=""; sub(/^[ \t]+/, ""); print }'\'' | tail -r | awk '\''!seen[$0]++'\'' | fzf --height 40% --layout=reverse --border --prompt="History > " --bind '\''enter:execute-silent(echo -n {} | pbcopy)+abort'\'''
 
