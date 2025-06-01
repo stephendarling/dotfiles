@@ -128,6 +128,7 @@ alias awsw='aws sts get-caller-identity'
 
 
 export PATH="$PATH:$HOME/.config/bin"
+export PATH="$PATH:$HOME/go/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

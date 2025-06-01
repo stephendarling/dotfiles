@@ -4,8 +4,8 @@
 (defsrc
   f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 
   0
-  tab r
-  caps f h j k l 
+  r
+  caps d f h j k l 
   x ,
 )
 (defvar
@@ -28,22 +28,22 @@
 (deflayer base
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
-  @tab r
-  @esc @f h @j k l 
+  r
+  @esc @d @f h @j @k l 
   @x @,
 )
 (deflayer nomods
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
-  tab r
-  esc f h j k l 
+  r
+  esc  d f h j k l 
   x ,
 )
 (deflayer alt-layer
   brdn brup _  _  _  _  prev pp next mute vold volu
   caps
-  - lrld
-  _    _ left down up right 
+  lrld
+  _    _ _ left down up right 
   _ _
 )
 (defalias
@@ -52,11 +52,12 @@
   rhyper (multi rsft ralt rctl rmet)
 
 
-  tab (tap-hold-press $tap-time $hold-time tab (layer-while-held alt-layer))
-  esc (tap-hold-press $tap-time $hold-time esc lctl)
+  esc (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
 
   x (tap-hold-release-keys $tap-time $hold-time-slow x @lhyper $left-hand-keys)
+  d (tap-hold-release-keys $tap-time $hold-time d lctl $left-hand-keys)
   f (tap-hold-release-keys $tap-time $hold-time f lalt $left-hand-keys)
   j (tap-hold-release-keys $tap-time $hold-time j ralt $right-hand-keys)
+  k (tap-hold-release-keys $tap-time $hold-time k rctl $right-hand-keys)
   , (tap-hold-release-keys $tap-time $hold-time-slow , @rhyper $right-hand-keys)
 )
