@@ -29,14 +29,14 @@
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
   @tab r
-  lctl @f h @j k l 
+  @esc @f h @j k l 
   @x @,
 )
 (deflayer nomods
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
   tab r
-  lctl f h j k l 
+  esc f h j k l 
   x ,
 )
 (deflayer alt-layer
@@ -53,6 +53,7 @@
 
 
   tab (tap-hold-press $tap-time $hold-time tab (layer-while-held alt-layer))
+  esc (tap-hold-press $tap-time $hold-time esc lctl)
 
   x (tap-hold-release-keys $tap-time $hold-time-slow x @lhyper $left-hand-keys)
   f (tap-hold-release-keys $tap-time $hold-time f lalt $left-hand-keys)

@@ -113,8 +113,11 @@ source $ZSH/oh-my-zsh.sh
 ####################################################################
 
 # source secrets
-source ~/.private/secrets/dailypay.sh
-source ~/.private/secrets/personal.sh
+for secret_file in ~/.private/secrets/*; do
+  if [ -f "$secret_file" ]; then
+    source "$secret_file"
+  fi
+done
 
 eval "$(/Users/stephendarling/.local/bin/mise activate zsh)"
 
@@ -133,4 +136,5 @@ export PATH="$PATH:$HOME/.config/bin"
 alias gs="git status"
 alias ga="git add -A"
 alias gcm="git commit -m"
+alias hist='history | awk '\''{ $1=""; sub(/^[ \t]+/, ""); print }'\'' | tac | awk '\''!seen[$0]++'\'' | fzf --height 40% --layout=reverse --border --prompt="History > " --bind '\''enter:execute-silent(echo -n {} | pbcopy)+abort'\'''
 
