@@ -139,3 +139,7 @@ alias ga="git add -A"
 alias gcm="git commit -m"
 alias hist='history | awk '\''{ $1=""; sub(/^[ \t]+/, ""); print }'\'' | tail -r | awk '\''!seen[$0]++'\'' | fzf --height 40% --layout=reverse --border --prompt="History > " --bind '\''enter:execute-silent(echo -n {} | pbcopy)+abort'\'''
 
+alias tg="terramate generate"
+
+# vi-mode
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh

@@ -18,5 +18,3 @@ inoremap <C-k> <Up>
 " Map Ctrl+L to move right
 noremap <C-l> <Right>
 inoremap <C-l> <Right>
-
-set clipboard=unnamedplus
