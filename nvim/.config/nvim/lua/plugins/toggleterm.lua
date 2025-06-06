@@ -7,6 +7,7 @@ return {
       winbar = {
         enabled = false,
       },
+      start_in_insert = true,
       size = function(term)
         if term.direction == "horizontal" then
           return 15
@@ -54,6 +55,11 @@ return {
         "<leader>th",
         "<cmd>ToggleTerm direction=horizontal<cr>",
         desc = "ToggleTerm Horizontal",
+      },
+      {
+        "<leader>tt",
+        "<cmd>ToggleTerm<cr>",
+        desc = "Toggle",
       },
     },
   },
