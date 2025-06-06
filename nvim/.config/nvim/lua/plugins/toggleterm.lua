@@ -4,6 +4,9 @@ return {
     "akinsho/toggleterm.nvim",
     version = "*",
     opts = {
+      winbar = {
+        enabled = false,
+      },
       size = function(term)
         if term.direction == "horizontal" then
           return 15
