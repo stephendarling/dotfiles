@@ -1,4 +1,4 @@
--- In your plugins/toggleterm.lua file (or wherever you configure it)
+-- In your plugins/toggleterm.lua file
 return {
   {
     "akinsho/toggleterm.nvim",
@@ -29,7 +29,7 @@ return {
         local keymap_opts = { buffer = term.bufnr, noremap = true, silent = true }
 
         -- Exit terminal mode with Esc or jk
-        vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], keymap_opts)
+        vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], keymap_opts) -- This line is now active
         vim.keymap.set("t", "jk", [[<C-\><C-n>]], keymap_opts)
 
         -- Navigate between windows from terminal mode
