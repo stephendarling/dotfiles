@@ -141,5 +141,7 @@ alias hist='history | awk '\''{ $1=""; sub(/^[ \t]+/, ""); print }'\'' | tail -r
 
 alias tg="terramate generate"
 alias tr="terramate run"
+
 # vi-mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
