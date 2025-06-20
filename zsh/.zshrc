@@ -14,6 +14,10 @@ find ~/.personal/ -type f -print0 | while IFS= read -r -d $'\0' personal_file; d
   source "$personal_file"
 done
 
+# brew
+export PATH="/opt/homebrew/bin:$PATH"
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 export PATH="$PATH:$HOME/.config/bin"
 export PATH="$PATH:$HOME/go/bin"
 
@@ -30,6 +34,4 @@ alias tr="terramate run"
 alias lg="lazygit"
 alias awsw='aws sts get-caller-identity'
 
-# vi-mode
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
