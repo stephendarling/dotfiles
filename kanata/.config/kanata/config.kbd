@@ -41,7 +41,6 @@
   caps
   lrld
   _    _ _ left down up right 
-  _ _
 )
 (defalias
 
