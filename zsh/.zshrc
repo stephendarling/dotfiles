@@ -113,10 +113,14 @@ source $ZSH/oh-my-zsh.sh
 ####################################################################
 
 # source secrets
-for secret_file in ~/.private/secrets/*; do
-  if [ -f "$secret_file" ]; then
-    source "$secret_file"
-  fi
+# for secret_file in ~/.private/secrets/*; do
+#   if [ -f "$secret_file" ]; then
+#     source "$secret_file"
+#   fi
+# done
+
+find ~/.private/ -type f -print0 | while IFS= read -r -d $'\0' private_file; do
+  source "$private_file"
 done
 
 eval "$(/Users/stephendarling/.local/bin/mise activate zsh)"

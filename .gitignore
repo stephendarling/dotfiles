@@ -1,4 +1,4 @@
 # karabiner-elements
 **/karabiner/automatic_backups/
-secrets/*
+private/*
 zshrc/*
