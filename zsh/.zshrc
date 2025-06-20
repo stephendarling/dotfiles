@@ -10,8 +10,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-find ~/.private/ -type f -print0 | while IFS= read -r -d $'\0' private_file; do
-  source "$private_file"
+find ~/.personal/ -type f -print0 | while IFS= read -r -d $'\0' personal_file; do
+  source "$personal_file"
 done
 
 export PATH="$PATH:$HOME/.config/bin"
