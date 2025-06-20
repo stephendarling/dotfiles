@@ -6,7 +6,6 @@
   0
   r
   caps d f h j k l 
-  x ,
 )
 (defvar
   tap-time 300
@@ -30,14 +29,12 @@
   0
   r
   @esc @d @f h @j @k l 
-  @x @,
 )
 (deflayer nomods
   brdn brup _  _  _  _  prev pp next mute vold volu
   0
   r
   esc  d f h j k l 
-  x ,
 )
 (deflayer alt-layer
   brdn brup _  _  _  _  prev pp next mute vold volu
@@ -54,10 +51,8 @@
 
   esc (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
 
-  x (tap-hold-release-keys $tap-time $hold-time-slow x @lhyper $left-hand-keys)
   d (tap-hold-release-keys $tap-time $hold-time d lctl $left-hand-keys)
   f (tap-hold-release-keys $tap-time $hold-time f lalt $left-hand-keys)
   j (tap-hold-release-keys $tap-time $hold-time j ralt $right-hand-keys)
   k (tap-hold-release-keys $tap-time $hold-time k rctl $right-hand-keys)
-  , (tap-hold-release-keys $tap-time $hold-time-slow , @rhyper $right-hand-keys)
 )
