@@ -123,13 +123,8 @@ find ~/.private/ -type f -print0 | while IFS= read -r -d $'\0' private_file; do
   source "$private_file"
 done
 
-eval "$(/Users/stephendarling/.local/bin/mise activate zsh)"
 
-export AWS_PROFILE="infrastructure-admin"
-alias awsps='export AWS_PROFILE=$(dp awsso li profiles | fzf)'
-alias awsl='AWS_PROFILE=infrastructure-staging aws sso login'
 alias awsw='aws sts get-caller-identity'
-
 
 export PATH="$PATH:$HOME/.config/bin"
 export PATH="$PATH:$HOME/go/bin"
