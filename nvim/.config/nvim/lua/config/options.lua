@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = false
+vim.g.snacks_animate = false

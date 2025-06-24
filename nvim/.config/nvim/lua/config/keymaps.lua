@@ -2,8 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set({ "n", "x" }, "<C-u>", "<C-u>zz", { desc = "Scroll Half Page Up (Centered)" })
-vim.keymap.set({ "n", "x" }, "<C-d>", "<C-d>zz", { desc = "Scroll Half Page Down (Centered)" })
 vim.api.nvim_set_keymap("n", "<leader>gd", ":DiffviewOpen origin/main...HEAD --imply-local<cr>", {
   noremap = true,
   silent = true,
