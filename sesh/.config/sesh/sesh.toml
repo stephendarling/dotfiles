@@ -1,7 +1,7 @@
 blacklist = ["root"]
 
 [default_session]
-startup_command = "nvim"
+startup_command = "nvim -c ':FzfLua files'"
 
 [[session]]
 name = "root"
