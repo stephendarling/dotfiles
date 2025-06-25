@@ -34,4 +34,6 @@ alias tr="terramate run"
 alias lg="lazygit"
 alias awsw='aws sts get-caller-identity'
 
-
+# zoxide
+eval "$(zoxide init zsh)"
+alias sr="sesh connect root"

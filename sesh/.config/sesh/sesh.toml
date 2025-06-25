@@ -1,0 +1,11 @@
+blacklist = ["root"]
+
+[default_session]
+startup_command = "nvim"
+
+[[session]]
+name = "root"
+path = "~/"
+disable_startup_command = true
+
+
