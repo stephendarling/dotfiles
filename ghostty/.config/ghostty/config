@@ -4,3 +4,4 @@ keybind = super+k=text:\x01\x74
 keybind = super+l=text:\x01\x4c
 keybind = super+f=text:\x20\x73\x62
 keybind = super+shift+f=text:\x20\x73\x67
+keybind = super+s=text:\x1b\x3a\x77\x0a
