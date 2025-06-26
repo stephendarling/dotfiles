@@ -38,3 +38,37 @@ alias awsw='aws sts get-caller-identity'
 eval "$(zoxide init zsh)"
 alias sr="sesh connect root"
 alias zad="ls -d */ | xargs -I {} zoxide add {}"
+
+# git clone and zoxide add
+clone() {
+  local repo_url="$1"
+  local repo_name
+
+  if [ -z "$repo_url" ]; then
+    echo "Usage: gc <repository_url>"
+    return 1
+  fi
+
+  # 1. Perform the git clone
+  echo "Cloning $repo_url..."
+  git clone "$repo_url"
+
+  # Check if git clone was successful
+  if [ $? -ne 0 ]; then
+    echo "Git clone failed. Aborting zoxide add."
+    return 1
+  fi
+
+  # 2. Extract the repository name (basename of the URL without .git)
+  repo_name=$(basename "$repo_url" .git)
+
+  # 3. Add the cloned directory to zoxide
+  if [ -d "$repo_name" ]; then
+    echo "Adding '$repo_name' to zoxide..."
+    zoxide add "$repo_name"
+    echo "Successfully cloned and added to zoxide: $repo_name"
+  else
+    echo "Warning: Cloned directory '$repo_name' not found. Zoxide add skipped."
+    echo "You might need to 'cd' into the cloned directory first if it was not created as expected."
+  fi
+}

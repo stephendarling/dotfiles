@@ -5,6 +5,7 @@ return {
       ensure_installed = {
         "goimports",
         "gofumpt",
+        "terraform-ls",
       },
     },
   },
@@ -70,6 +71,46 @@ return {
           -- end workaround
         end,
       },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    lazy = false, -- or load it on demand with a filetype or command
+    keys = {
+      {
+        "<leader>f",
+        function()
+          require("conform").format({ async = true, lsp_fallback = true })
+        end,
+        mode = "",
+        desc = "Format buffer",
+      },
+    },
+    opts = {
+      -- Map filetypes to formatters
+      formatters_by_ft = {
+        lua = { "stylua" },
+        go = { "goimports", "gofumpt" },
+        -- Terraform and HCL
+        terraform = { "terraform_fmt" },
+        hcl = { "terraform_fmt" },
+        ["terraform-vars"] = { "terraform_fmt" },
+      },
+      -- Set up format on save
+      format_on_save = {
+        lsp_fallback = true,
+        async = false, -- Set to true if you don't mind a brief visual flicker
+        timeout_ms = 500,
+      },
+      -- You can also add specific formatter configurations here if needed
+      -- formatters = {
+      --   terraform_fmt = {
+      --     command = "terraform",
+      --     args = { "fmt", "-" },
+      --     -- If terraform fmt is not in your PATH, you might need to specify the path:
+      --     -- path = "/usr/local/bin/terraform",
+      --   },
+      -- },
     },
   },
 }
