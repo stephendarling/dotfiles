@@ -39,9 +39,3 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     end
   end,
 })
-
-vim.keymap.del("n", "<space><space>")
-local Util = require("lazyvim.util")
-vim.keymap.set("n", "<space><space>", function()
-  require("fzf-lua").files({ cwd = Util.root.get() })
-end, { desc = "Fuzzy find files (project root)" })
