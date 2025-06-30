@@ -40,17 +40,8 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   end,
 })
 
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "oil", -- Apply this autocmd when the filetype is 'oil'
-  group = vim.api.nvim_create_augroup("OilSaveKeymaps", { clear = true }), -- Clear group on reload
-  callback = function()
-    -- Set keymap for Normal and Insert mode in 'oil' buffers
-    vim.keymap.set({ "n", "i" }, "<C-s>", "<cmd>write<CR>", {
-      buffer = true, -- Make this mapping local to the current buffer
-      desc = "Save Oil buffer",
-    })
-    -- If you want a different behavior for <C-s> in normal files vs oil,
-    -- ensure your global <C-s> isn't overwriting this.
-    -- If your global <C-s> is also :w, then this is fine.
-  end,
-})
+vim.keymap.del("n", "<space><space>")
+local Util = require("lazyvim.util")
+vim.keymap.set("n", "<space><space>", function()
+  require("fzf-lua").files({ cwd = Util.root.get() })
+end, { desc = "Fuzzy find files (project root)" })
