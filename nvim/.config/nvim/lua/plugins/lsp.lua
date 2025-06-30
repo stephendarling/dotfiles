@@ -6,6 +6,7 @@ return {
         "goimports",
         "gofumpt",
         "terraform-ls",
+        "pyright",
       },
     },
   },
@@ -13,6 +14,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        pyright = {
+          settings = {},
+        },
         gopls = {
           settings = {
             gopls = {
