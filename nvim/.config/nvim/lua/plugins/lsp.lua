@@ -97,11 +97,11 @@ return {
         ["terraform-vars"] = { "terraform_fmt" },
       },
       -- Set up format on save
-      format_on_save = {
-        lsp_fallback = true,
-        async = false, -- Set to true if you don't mind a brief visual flicker
-        timeout_ms = 500,
-      },
+      -- format_on_save = {
+      --   lsp_fallback = true,
+      --   async = false, -- Set to true if you don't mind a brief visual flicker
+      --   timeout_ms = 500,
+      -- },
       -- You can also add specific formatter configurations here if needed
       -- formatters = {
       --   terraform_fmt = {
