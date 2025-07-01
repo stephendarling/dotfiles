@@ -4,7 +4,9 @@ return {
     local actions = require("fzf-lua").actions
     require("fzf-lua").setup({
       files = {
-        cmd = "rg --files --hidden --glob '!.git/*'",
+        hidden = true,
+        ignore = false,
+        -- cmd = "rg --files --hidden --glob '!.git/*'",
       },
       oldfiles = {
         cwd_only = true, -- Only show files from current working directory
