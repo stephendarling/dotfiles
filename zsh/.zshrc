@@ -72,3 +72,5 @@ clone() {
     echo "You might need to 'cd' into the cloned directory first if it was not created as expected."
   fi
 }
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
