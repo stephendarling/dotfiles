@@ -7,6 +7,7 @@ return {
         "gofumpt",
         "terraform-ls",
         "pyright",
+        "black",
       },
     },
   },
@@ -93,6 +94,7 @@ return {
     opts = {
       -- Map filetypes to formatters
       formatters_by_ft = {
+        python = { "black" },
         lua = { "stylua" },
         go = { "goimports", "gofumpt" },
         -- Terraform and HCL
@@ -100,11 +102,6 @@ return {
         hcl = { "terraform_fmt" },
         ["terraform-vars"] = { "terraform_fmt" },
       },
-      -- format_on_save = {
-      --   lsp_fallback = true,
-      --   async = false, -- Set to true if you don't mind a brief visual flicker
-      --   timeout_ms = 500,
-      -- },
       formatters = {
         terraform_fmt = {
           command = "terraform",
