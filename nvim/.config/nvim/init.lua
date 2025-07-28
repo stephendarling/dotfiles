@@ -1,6 +1,12 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+vim.filetype.add({
+  extension = {
+    tf = "terraform",
+  },
+})
+
 neoscroll = require("neoscroll")
 local keymap = {
   ["<C-u>"] = function()
