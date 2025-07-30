@@ -1,6 +1,18 @@
 #!/bin/bash
 
 APP_NAME="$1"
+LAPTOP_KEY="h"
+ULTRAWIDE_KEY="k"
+
+# Detect screen width
+MODE=$(cat ~/.display_mode)
+
+# Choose key based on screen
+if [ "$MODE" == "laptop" ]; then
+  KEY="$LAPTOP_KEY"
+else
+  KEY="$ULTRAWIDE_KEY"
+fi
 
 osascript <<EOF
 do shell script "open -a \\"$APP_NAME\\""
@@ -15,9 +27,9 @@ tell application "System Events"
 	end repeat
 end tell
 
-delay 0.2
+delay 0.5
 
 tell application "System Events"
-	keystroke "h" using { option down, control down }
+	keystroke "$KEY" using { option down, control down }
 end tell
 EOF

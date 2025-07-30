@@ -46,13 +46,14 @@
 
   lhyper (multi lsft lalt lctl lmet)
   rhyper (multi rsft ralt rctl rmet)
-  lmeh (multi lalt lctl)
+  lmeh (multi lalt lctl lmet)
+  rmeh (multi ralt rctl rmet)
 
   esc (tap-hold-press $tap-time $hold-time esc (layer-while-held alt-layer))
   tab (tap-hold-press $tap-time $hold-time tab @lmeh)
 
   d (tap-hold-release-keys $tap-time $hold-time d lctl $left-hand-keys)
-  f (tap-hold-release-keys $tap-time $hold-time f lalt $left-hand-keys)
-  j (tap-hold-release-keys $tap-time $hold-time j ralt $right-hand-keys)
+  f (tap-hold-release-keys $tap-time $hold-time f @lmeh $left-hand-keys)
+  j (tap-hold-release-keys $tap-time $hold-time j @rmeh $right-hand-keys)
   k (tap-hold-release-keys $tap-time $hold-time k rctl $right-hand-keys)
 )
