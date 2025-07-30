@@ -2,7 +2,8 @@
 # To update any of these config, make the changes here and restart the skhd process with
 # skhd --restart-service
 
-alt - g : open -a 'Google Chrome'
-alt - t : open -a 'Ghostty'
-alt - s : open -a 'Slack'
 alt - z : open -a 'Zoom.us'
+
+alt - t : ~/dev/dotfiles/scripts/osa-open-app.sh "Ghostty"
+alt - g : ~/dev/dotfiles/scripts/osa-open-app.sh "Google Chrome"
+alt - s : ~/dev/dotfiles/scripts/osa-open-app.sh "Slack"
