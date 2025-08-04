@@ -14,3 +14,5 @@ keybind = super+6=text:\x01\x36
 keybind = super+7=text:\x01\x37
 keybind = super+8=text:\x01\x38
 keybind = super+9=text:\x01\x39
+keybind = super+control+l=text:\x20\x62\x4c
+keybind = super+control+h=text:\x20\x62\x48

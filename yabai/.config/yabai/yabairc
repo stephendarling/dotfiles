@@ -1,0 +1,14 @@
+# Set a default tiling layout
+yabai -m config layout bsp
+
+# Set gaps between windows
+yabai -m config window_gap 10
+
+# Set padding for the screen edges (optional, but nice)
+yabai -m config top_padding    10
+yabai -m config bottom_padding 10
+yabai -m config left_padding   10
+yabai -m config right_padding  10
+
+# Place new windows on the left
+yabai -m config window_placement first_child
