@@ -2,27 +2,53 @@
 # To update any of these config, make the changes here and restart the skhd process with
 # skhd --restart-service
 
-cmd + ctrl + alt - g : open -a 'Google Chrome'
-cmd + ctrl + alt - t : open -a 'Ghostty'
-cmd + ctrl + alt - s : open -a 'Slack'
-cmd + ctrl + alt - z : open -a 'Zoom.us'
+alt - g : open -a 'Google Chrome'
+alt - t : open -a 'Ghostty'
+alt - s : open -a 'Slack'
+alt - z : open -a 'Zoom.us'
 
 alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 
-alt + shift - h : yabai -m window --swap west
-alt + shift - j : yabai -m window --swap south
-alt + shift - k : yabai -m window --swap north
-alt + shift - l : yabai -m window --swap east
+ctrl + alt - h : yabai -m window --swap west
+ctrl + alt - j : yabai -m window --swap south
+ctrl + alt - k : yabai -m window --swap north
+ctrl + alt - l : yabai -m window --swap east
+
+ctrl + alt + shift - h : yabai -m window --warp west
+ctrl + alt + shift - j : yabai -m window --warp south
+ctrl + alt + shift - k : yabai -m window --warp north
+ctrl + alt + shift - l : yabai -m window --warp east
 
 # Zoom
-alt - z : yabai -m window --toggle zoom-parent
-alt + shift - z : yabai -m window --toggle zoom-fullscreen
+alt - space : yabai -m window --toggle zoom-parent
+ctrl + alt - space : yabai -m window --toggle zoom-fullscreen
 
 # Spaces
+ctrl + alt - c : yabai -m space --create
+ctrl + alt - d : yabai -m space --destroy
+
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2
 alt - 3 : yabai -m space --focus 3
 alt - 4 : yabai -m space --focus 4
+
+alt - n : yabai -m space --focus next || yabai -m space --focus first
+alt - p : yabai -m space --focus prev || yabai -m space --focus last
+
+ctrl + alt - n : yabai -m window --space next --focus || yabai -m window --space first --focus
+ctrl + alt - p : yabai -m window --space prev --focus || yabai -m window --space last --focus
+
+# Balance
+
+ctrl + alt - b : yabai -m space --balance
+
+# Resizing
+
+
+# Admin
+alt + ctrl - r : skhd --restart-service
+alt + ctrl + shift - r : yabai --restart-service
+
