@@ -10,6 +10,7 @@ yabai -m config left_padding   10
 yabai -m config right_padding  10
 yabai -m config window_placement first_child
 yabai -m config mouse_modifier alt
+yabai -m config window_animation_duration 0.0
 
 # Window opacity
 yabai -m config window_opacity on

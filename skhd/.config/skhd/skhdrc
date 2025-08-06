@@ -23,8 +23,7 @@ ctrl + alt + shift - k : yabai -m window --warp north
 ctrl + alt + shift - l : yabai -m window --warp east
 
 # Zoom
-alt - space : yabai -m window --toggle zoom-parent
-ctrl + alt - space : yabai -m window --toggle zoom-fullscreen
+ctrl + alt - space : yabai -m window --toggle zoom-parent
 
 # Spaces
 ctrl + alt - c : yabai -m space --create
@@ -44,9 +43,6 @@ ctrl + alt - p : yabai -m window --space prev --focus || yabai -m window --space
 # Balance
 
 ctrl + alt - b : yabai -m space --balance
-
-# Resizing
-
 
 # Admin
 alt + ctrl - r : skhd --restart-service
