@@ -6,3 +6,23 @@ cmd + ctrl + alt - g : open -a 'Google Chrome'
 cmd + ctrl + alt - t : open -a 'Ghostty'
 cmd + ctrl + alt - s : open -a 'Slack'
 cmd + ctrl + alt - z : open -a 'Zoom.us'
+
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+alt + shift - h : yabai -m window --swap west
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - l : yabai -m window --swap east
+
+# Zoom
+alt - z : yabai -m window --toggle zoom-parent
+alt + shift - z : yabai -m window --toggle zoom-fullscreen
+
+# Spaces
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
