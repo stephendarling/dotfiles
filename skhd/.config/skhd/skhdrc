@@ -12,10 +12,10 @@ alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 
-ctrl + alt - h : yabai -m window --swap west
-ctrl + alt - j : yabai -m window --swap south
-ctrl + alt - k : yabai -m window --swap north
-ctrl + alt - l : yabai -m window --swap east
+ctrl + alt - h : yabai -m window west --insert stack && yabai -m window --warp west
+ctrl + alt - j : yabai -m window south --insert stack && yabai -m window --warp south
+ctrl + alt - k : yabai -m window north --insert stack && yabai -m window --warp north
+ctrl + alt - l : yabai -m window east --insert stack && yabai -m window --warp east
 
 ctrl + alt + shift - h : yabai -m window --warp west
 ctrl + alt + shift - j : yabai -m window --warp south
@@ -28,6 +28,11 @@ ctrl + alt - space : yabai -m window --toggle zoom-parent
 # Spaces
 ctrl + alt - c : yabai -m space --create
 ctrl + alt - d : yabai -m space --destroy
+
+# Toggle Columns
+ctrl + alt - 1 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 1
+ctrl + alt - 2 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 2
+ctrl + alt - 3 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 3
 
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2
