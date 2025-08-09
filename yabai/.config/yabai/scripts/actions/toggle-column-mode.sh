@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 LOGFILE="$HOME/.config/yabai/logs/actions/toggle-column-mode.log"
 
 exec >>$LOGFILE 2>&1
@@ -9,32 +11,55 @@ log() {
 }
 
 createColumns() {
-  OTHER_VISIBLE_WINDOWS=$(yabai -m query --windows | jq 'map(select((."is-visible" == true) and ."is-floating" == false and ."has-focus" == false ))')
-  FOCUSED_WINDOW_ID=$(yabai -m query --windows | jq 'map(select(."has-focus" == true)) | .[0].id')
-  TOTAL_WINDOWS=$(($(jq length <<<$OTHER_VISIBLE_WINDOWS) + 1))
+
+  VISIBLE_WINDOWS=$(yabai -m query --windows | jq 'map(select((."is-visible" == true) and ."is-floating" == false))')
+  TOTAL_WINDOWS=$(jq 'length' <<<$VISIBLE_WINDOWS)
+  STACK_WINDOW_INDEX=$((COLUMNS - 1))
+  STACK_WINDOW_ID=$(jq --arg swi "$STACK_WINDOW_INDEX" '.[($swi | tonumber)].id' <<<$VISIBLE_WINDOWS)
 
   yabai -m config --space $SPACE_ID layout bsp
 
   if [ $TOTAL_WINDOWS -gt $COLUMNS ]; then
-    PREVIOUS_WINDOWS=$(yabai -m query --windows --space $SPACE_ID prev | jq 'map(select(."is-visible" == true))')
-    index=0
-    jq -c '.[]' <<<$PREVIOUS_WINDOWS | while read i; do
-      WINDOW_ID=$(echo $i | jq .id)
-      if [ $((index + 1)) -gt $COLUMNS ]; then
-        STACK_WINDOW_ID=$(jq --arg i "$((index - 1))" '.[$i | tonumber].id' <<<$PREVIOUS_WINDOWS)
-        log "index +1 greater than columns for window $WINDOW_ID"
-        yabai -m window $STACK_WINDOW_ID --insert stack
-        yabai -m window $WINDOW_ID --warp $STACK_WINDOW_ID
-        yabai -m window $WINDOW_ID --raise $STACK_WINDOW_ID
+    VISIBLE_IDS=$(jq 'map(.id)' <<<$VISIBLE_WINDOWS)
+    history_ids=()
+    while IFS= read -r line; do
+      history_ids+=("$line")
+    done < <(jq '.[]' <<<$VISIBLE_IDS)
+
+    for i in "${!history_ids[@]}"; do
+      window_num=$((i + 1))
+      id=${history_ids[i]}
+
+      if [[ $i == 0 ]]; then
+        yabai -m window $id --warp last
       fi
-      ((index++))
+
+      if [[ $i -gt 0 ]]; then
+        prev_index=$((i - 1))
+        prev_id=${history_ids[prev_index]}
+
+        if ((window_num <= COLUMNS)); then
+          yabai -m window $id --warp $prev_id
+        fi
+
+        if [[ $window_num -gt $COLUMNS ]]; then
+          yabai -m window $prev_id --insert stack
+          yabai -m window $id --warp $prev_id
+        fi
+      fi
     done
+
   fi
 
-  yabai -m space $SPACE_ID --mirror y-axis
-  yabai -m space $SPACE_ID --balance
+  for ((i = COLUMNS - 1; i >= 0; i--)); do
+    window_id=$(jq --arg i "$i" '.[($i | tonumber)].id' <<<$VISIBLE_WINDOWS)
+    yabai -m window $window_id --focus
+  done
 
+  yabai -m space $SPACE_ID --balance
 }
+
+CONFIG_FILE=$HOME/.config/yabai/config.json
 
 SPACE_ID=$(
   yabai -m query --windows | jq 'map(select(."has-focus" == true)) | .[0].space'
@@ -51,5 +76,4 @@ case $COLUMNS in
   ;;
 esac
 
-defaults write com.user.yabai.settings columnMode -int $1
-log "Set columnMode to $1"
+jq --arg c "$COLUMNS" '.columnMode = ($c | tonumber)' "$CONFIG_FILE" | sponge "$CONFIG_FILE"

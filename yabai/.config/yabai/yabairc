@@ -12,7 +12,7 @@ yabai -m config mouse_modifier alt
 yabai -m config mouse_drop_action stack
 yabai -m config window_animation_duration 0.0
 yabai -m config insert_feedback_color 0x0000ffcc
-yabai -m config window_insertion_point last
+yabai -m config window_insertion_point first
 yabai -m config split_type vertical
 
 # Window opacity
@@ -28,4 +28,7 @@ yabai -m rule --add app="^Snagit$" manage=off
 yabai -m rule --add app="^Todoist$" manage=off
 
 # Signals
-yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/signals/window-created.sh $YABAI_WINDOW_ID"
+yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/signals/window-created.sh"
+yabai -m signal --add event=application_front_switched action="$HOME/.config/yabai/scripts/signals/application-front-switched.sh"
+# yabai -m signal --add event=window_focused action="$HOME/.config/yabai/scripts/signals/window-focused.sh"
+# yabai -m signal --add event=window_destroyed action="$HOME/.config/yabai/scripts/signals/window-destroyed.sh"

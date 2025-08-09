@@ -52,4 +52,6 @@ ctrl + alt - b : yabai -m space --balance
 # Admin
 alt + ctrl - r : skhd --restart-service
 alt + ctrl + shift - r : yabai --restart-service
+alt + ctrl + shift - b : yabai -m config --space 1 layout bsp
+alt + ctrl + shift - s : yabai -m config --space 1 layout stack
 

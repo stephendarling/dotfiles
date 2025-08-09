@@ -10,7 +10,7 @@ log() {
   echo $MESSAGE
 }
 
-ID=$1
+ID=$YABAI_WINDOW_ID
 log "Begin Event => $ID"
 
 VISIBLE_WINDOWS=$(yabai -m query --windows | jq 'map(select((."is-visible" == true) and ."is-floating" == false ))')
