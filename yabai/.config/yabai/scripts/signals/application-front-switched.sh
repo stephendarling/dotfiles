@@ -1,14 +1,28 @@
-# #!/bin/bash
+#!/bin/bash
+
+LOGFILE="$HOME/.config/yabai/logs/signal-application-front-switched.log"
+
+exec >>$LOGFILE 2>&1
+
+log() {
+  local MESSAGE
+  MESSAGE="[$(date +'%Y-%m-%d %H:%M:%S')] $@"
+  echo $MESSAGE
+}
+
+# window=$(yabai -m query --windows --window)
+# window_id=$(jq '.id' <<<$window)
+# stack_index=$(jq '."stack-index"' <<<$window)
 #
-# LOGFILE="$HOME/.config/yabai/logs/signals/application-front-switched.log"
+# if ((stack_index > 0)); then
+#   first_stack_window_id=$(yabai -m query --windows --window first.first | jq '.id')
 #
-# exec >>$LOGFILE 2>&1
+#   if ((window_id != first_stack_window_id)); then
+#     log "moving to top"
+#     yabai -m window --stack stack.first --focus
+#   fi
+# fi
 #
-# log() {
-#   local MESSAGE
-#   MESSAGE="[$(date +'%Y-%m-%d %H:%M:%S')] $@"
-#   echo $MESSAGE
-# }
 #
 # new_pid=$YABAI_PROCESS_ID
 # prev_pid=$YABAI_RECENT_PROCESS_ID

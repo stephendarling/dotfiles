@@ -7,20 +7,11 @@ alt - t : open -a 'Ghostty'
 alt - s : open -a 'Slack'
 alt - z : open -a 'Zoom.us'
 
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
+alt - h : yabai -m window --focus west || yabai -m window --focus last
+alt - l : yabai -m window --focus east || yabai -m window --focus first
 
-ctrl + alt - h : yabai -m window west --insert stack && yabai -m window --warp west
-ctrl + alt - j : yabai -m window south --insert stack && yabai -m window --warp south
-ctrl + alt - k : yabai -m window north --insert stack && yabai -m window --warp north
-ctrl + alt - l : yabai -m window east --insert stack && yabai -m window --warp east
-
-ctrl + alt + shift - h : yabai -m window --warp west
-ctrl + alt + shift - j : yabai -m window --warp south
-ctrl + alt + shift - k : yabai -m window --warp north
-ctrl + alt + shift - l : yabai -m window --warp east
+ctrl + alt - h : $HOME/.config/yabai/scripts/actions/move.sh west
+ctrl + alt - l : $HOME/.config/yabai/scripts/actions/move.sh east
 
 # Zoom
 ctrl + alt - space : yabai -m window --toggle zoom-parent

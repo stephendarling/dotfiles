@@ -30,5 +30,6 @@ yabai -m rule --add app="^Todoist$" manage=off
 # Signals
 yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/signals/window-created.sh"
 yabai -m signal --add event=application_front_switched action="$HOME/.config/yabai/scripts/signals/application-front-switched.sh"
+yabai -m signal --add event=window_focused action="$HOME/.config/yabai/scripts/signals/window-focused.sh"
 # yabai -m signal --add event=window_focused action="$HOME/.config/yabai/scripts/signals/window-focused.sh"
 # yabai -m signal --add event=window_destroyed action="$HOME/.config/yabai/scripts/signals/window-destroyed.sh"

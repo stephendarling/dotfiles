@@ -45,16 +45,13 @@ createColumns() {
         if [[ $window_num -gt $COLUMNS ]]; then
           yabai -m window $prev_id --insert stack
           yabai -m window $id --warp $prev_id
+          # yabai -m window stack.last --stack $id
+          yabai -m window $prev_id --stack $id
         fi
       fi
     done
 
   fi
-
-  for ((i = COLUMNS - 1; i >= 0; i--)); do
-    window_id=$(jq --arg i "$i" '.[($i | tonumber)].id' <<<$VISIBLE_WINDOWS)
-    yabai -m window $window_id --focus
-  done
 
   yabai -m space $SPACE_ID --balance
 }
