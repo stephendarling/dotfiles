@@ -52,7 +52,7 @@ fi
 log "direction => $direction, wrap => $wrap_direction"
 
 wid=$(yabai -m query --windows --window | jq '.id')
-layout=$(yabai -m query --windows | jq ' map(select(."is-visible" == true)) | group_by(.frame) | to_entries | map({key: ((.key + 1) | tostring), value}) | from_entries')
+layout=$(yabai -m query --windows | jq ' map(select(."is-visible" == true)) | group_by(.frame.x) | to_entries | map({key: ((.key + 1) | tostring), value}) | from_entries')
 current_column=$(get_window_column $wid)
 log "current column => $current_column"
 target_location_wid=$(yabai -m query --windows --window $direction | jq -e '.id' || yabai -m query --windows --window $wrap_direction | jq -e '.id')
