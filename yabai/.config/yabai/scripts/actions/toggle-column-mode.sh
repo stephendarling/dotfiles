@@ -11,13 +11,12 @@ log() {
 }
 
 createColumns() {
-
-  VISIBLE_WINDOWS=$(yabai -m query --windows | jq 'map(select((."is-visible" == true) and ."is-floating" == false))')
+  VISIBLE_WINDOWS=$(jq 'map(select((."is-visible" == true) and ."is-floating" == false))' <<<$windows)
   TOTAL_WINDOWS=$(jq 'length' <<<$VISIBLE_WINDOWS)
   STACK_WINDOW_INDEX=$((COLUMNS - 1))
   STACK_WINDOW_ID=$(jq --arg swi "$STACK_WINDOW_INDEX" '.[($swi | tonumber)].id' <<<$VISIBLE_WINDOWS)
 
-  yabai -m config --space $SPACE_ID layout bsp
+  yabai -m config --space $space_id layout bsp
 
   if [ $TOTAL_WINDOWS -gt $COLUMNS ]; then
     VISIBLE_IDS=$(jq 'map(.id)' <<<$VISIBLE_WINDOWS)
@@ -57,16 +56,15 @@ createColumns() {
 }
 
 CONFIG_FILE=$HOME/.config/yabai/config.json
-
-SPACE_ID=$(
-  yabai -m query --windows | jq 'map(select(."has-focus" == true)) | .[0].space'
-)
+windows=$(yabai -m query --windows)
+window=$(yabai -m query --windows --window)
+space_id=$(jq '.space' <<<$window)
 
 COLUMNS=$1
 
 case $COLUMNS in
 1)
-  yabai -m config --space $SPACE_ID layout stack
+  yabai -m config --space $space_id layout stack
   ;;
 *)
   createColumns
