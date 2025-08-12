@@ -11,6 +11,7 @@ log() {
 }
 
 wid=$YABAI_WINDOW_ID
+yabai -m window $wid --opacity 1.0
 windows=$(yabai -m query --windows)
 layout=$(jq 'map(select(."is-visible" == true)) | group_by(.frame.x) | to_entries | map({key: ((.key + 1) | tostring), value}) | from_entries' <<<$windows)
 column_keys=$(jq 'keys | .[]' <<<$layout)
@@ -32,7 +33,9 @@ while IFS= read -r line; do
 done < <(jq '.[] | select(."is-visible" == true) | .id' <<<$windows)
 
 for i in "${all_windows[@]}"; do
+  update=true
   if ((i == wid)); then
+    update=false
     opacity=1.0
   elif [[ " ${visible[*]} " =~ " $i " ]]; then
     opacity=0.8
@@ -40,5 +43,9 @@ for i in "${all_windows[@]}"; do
     opacity=0.2
   fi
 
-  yabai -m window $i --opacity $opacity
+  if ((update == true)); then
+    yabai -m window $i --opacity $opacity
+  else
+    exit 0
+  fi
 done
