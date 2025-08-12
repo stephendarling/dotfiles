@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LOGFILE="$HOME/.config/yabai/logs/actions/toggle-column-mode.log"
+LOGFILE="$HOME/.config/yabai/logs/action-toggle-column-mode.log"
 
 exec >>$LOGFILE 2>&1
 

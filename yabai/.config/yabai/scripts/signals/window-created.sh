@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOGFILE="$HOME/.config/yabai/logs/signals/window-created.log"
+LOGFILE="$HOME/.config/yabai/logs/signal-window-created.log"
 
 exec >>$LOGFILE 2>&1
 
