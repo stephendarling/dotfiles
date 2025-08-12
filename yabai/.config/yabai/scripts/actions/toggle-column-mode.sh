@@ -74,3 +74,5 @@ case $COLUMNS in
 esac
 
 jq --arg c "$COLUMNS" '.columnMode = ($c | tonumber)' "$CONFIG_FILE" | sponge "$CONFIG_FILE"
+
+$HOME/.config/yabai/scripts/signals/window-focused.sh
