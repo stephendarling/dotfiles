@@ -57,8 +57,7 @@ createColumns() {
 
 CONFIG_FILE=$HOME/.config/yabai/config.json
 windows=$(yabai -m query --windows)
-window=$(yabai -m query --windows --window)
-space_id=$(jq '.space' <<<$window)
+space_id=$(jq 'map(select(."has-focus" == true)) | .[0].space' <<<"$windows")
 
 COLUMNS=$1
 
