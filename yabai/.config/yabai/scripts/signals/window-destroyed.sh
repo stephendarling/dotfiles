@@ -10,4 +10,5 @@ log() {
   echo $MESSAGE
 }
 
-yabai -m space --balance
+yabai -m window recent --focus
+yabai -m space recent --balance

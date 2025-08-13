@@ -33,7 +33,5 @@ yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/s
 yabai -m signal --add event=window_destroyed action="$HOME/.config/yabai/scripts/signals/window-destroyed.sh"
 yabai -m signal --add event=display_changed action="$HOME/.config/yabai/scripts/signals/display-changed.sh"
 yabai -m signal --add event=window_focused action="$HOME/.config/yabai/scripts/signals/window-focused.sh"
-
-# Deactivated
-# yabai -m signal --add event=application_front_switched action="$HOME/.config/yabai/scripts/signals/application-front-switched.sh"
+yabai -m signal --add event=application_front_switched action="$HOME/.config/yabai/scripts/signals/application-front-switched.sh"
 

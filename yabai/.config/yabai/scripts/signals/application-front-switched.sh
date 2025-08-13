@@ -10,5 +10,6 @@ log() {
   echo $MESSAGE
 }
 
-first=$YABAI_PROCESS_ID
-second=$YABAI_RECENT_PROCESS_ID
+pid=$YABAI_PROCESS_ID
+wid=$(yabai -m query --windows | jq --arg pid "$pid" '.[] | select(.pid == ($pid | tonumber)) | .id')
+yabai -m window $wid --focus
