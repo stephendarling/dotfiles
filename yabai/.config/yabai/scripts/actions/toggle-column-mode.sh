@@ -18,7 +18,9 @@ createColumns() {
 
   yabai -m config --space $space_id layout bsp
 
-  if [ $TOTAL_WINDOWS -gt $COLUMNS ]; then
+  if ((TOTAL_WINDOWS <= COLUMNS)); then
+    yabai -m space $space_id --mirror y-axis
+  else
     VISIBLE_IDS=$(jq 'map(.id)' <<<$VISIBLE_WINDOWS)
     history_ids=()
     while IFS= read -r line; do
