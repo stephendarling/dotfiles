@@ -16,10 +16,10 @@ yabai -m config window_insertion_point first
 yabai -m config split_type vertical
 
 # Window opacity
-yabai -m config window_opacity on
-yabai -m config window_opacity_duration 0.0
-yabai -m config active_window_opacity 1.0
-yabai -m config normal_window_opacity 0.75
+# yabai -m config window_opacity on
+# yabai -m config window_opacity_duration 0.0
+# yabai -m config active_window_opacity 1.0
+# yabai -m config normal_window_opacity 0.75
 
 # Ignored
 yabai -m rule --add app="^System Settings$" manage=off
@@ -31,6 +31,6 @@ yabai -m rule --add app="^Todoist$" manage=off
 yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/signals/window-created.sh"
 yabai -m signal --add event=window_destroyed action="$HOME/.config/yabai/scripts/signals/window-destroyed.sh"
 yabai -m signal --add event=display_changed action="$HOME/.config/yabai/scripts/signals/display-changed.sh"
-yabai -m signal --add event=window_focused action="$HOME/.config/yabai/scripts/signals/window-focused.sh"
+# yabai -m signal --add event=window_focused action="$HOME/.config/yabai/scripts/signals/window-focused.sh"
 yabai -m signal --add event=application_front_switched action="$HOME/.config/yabai/scripts/signals/application-front-switched.sh"
 
