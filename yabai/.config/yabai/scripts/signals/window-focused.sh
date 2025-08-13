@@ -10,42 +10,21 @@ log() {
   echo $MESSAGE
 }
 
-wid=$YABAI_WINDOW_ID
-yabai -m window $wid --opacity 1.0
 windows=$(yabai -m query --windows)
-layout=$(jq 'map(select(."is-visible" == true)) | group_by(.frame.x) | to_entries | map({key: ((.key + 1) | tostring), value}) | from_entries' <<<$windows)
-column_keys=$(jq 'keys | .[]' <<<$layout)
+focused_wid=$(echo "$windows" | jq 'map(select(."has-focus"))[0].id')
+visible_column_wids=$(echo "$windows" | jq '[map(select(."is-visible")) | group_by(.frame.x) | map(.[0].id)[]]')
 
-columns=()
-while IFS= read -r line; do
-  columns+=("$line")
-done < <(jq 'keys | .[]' <<<$layout)
+echo "$windows" | jq -c '.[]' | while read -r window; do
+  id=$(echo "$window" | jq '.id')
+  opacity=""
 
-visible=()
-for i in "${columns[@]}"; do
-  visible_id=$(jq --arg i "$i" ".[$i][0].id" <<<$layout)
-  visible+=($visible_id)
-done
-
-all_windows=()
-while IFS= read -r line; do
-  all_windows+=($line)
-done < <(jq '.[] | select(."is-visible" == true) | .id' <<<$windows)
-
-for i in "${all_windows[@]}"; do
-  update=true
-  if ((i == wid)); then
-    update=false
-    opacity=1.0
-  elif [[ " ${visible[*]} " =~ " $i " ]]; then
-    opacity=0.8
+  if [[ "$id" == "$focused_wid" ]]; then
+    opacity="1.0"
+  elif [[ $(echo "$visible_column_wids" | jq "contains([$id])") == "true" ]]; then
+    opacity="0.8"
   else
-    opacity=0.2
+    opacity="0.2"
   fi
 
-  if ((update == true)); then
-    yabai -m window $i --opacity $opacity
-  else
-    exit 0
-  fi
+  yabai -m window "$id" --opacity "$opacity"
 done
