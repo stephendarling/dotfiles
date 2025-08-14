@@ -57,7 +57,6 @@ createColumns() {
   yabai -m space $SPACE_ID --balance
 }
 
-CONFIG_FILE=$HOME/.config/yabai/config.json
 windows=$(yabai -m query --windows)
 space_id=$(jq 'map(select(."has-focus" == true)) | .[0].space' <<<"$windows")
 
@@ -72,4 +71,4 @@ case $COLUMNS in
   ;;
 esac
 
-jq --arg c "$COLUMNS" '.columnMode = ($c | tonumber)' "$CONFIG_FILE" | sponge "$CONFIG_FILE"
+defaults write com.koekeishiya.yabai columnMode -int "$COLUMNS"

@@ -104,7 +104,7 @@ log "Target location column => $target_location_column"
 
 # --- The rest of the script's logic remains the same ---
 stack_column_count=$(jq '.["1"] | length' <<<"$layout")
-columns=$(jq '.columnMode' "$HOME/.config/yabai/config.json")
+columns=$(defaults read com.koekeishiya.yabai columnMode)
 
 if ((columns > 1 && stack_column_count <= 1 && current_column == 1)); then
   swap
