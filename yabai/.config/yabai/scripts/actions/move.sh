@@ -60,7 +60,7 @@ log "target location wid => $target_location_wid"
 target_location_column=$(get_window_column $target_location_wid)
 log "target location column => $target_location_column"
 stack_column_count=$(jq '.["1"] | length' <<<$layout)
-columns=$(cat $HOME/.config/yabai/config.json | jq '.columnMode')
+columns=$(defaults read com.koekeishiya.yabai columnMode)
 
 if ((columns > 1 && stack_column_count == 1)); then
   swap
