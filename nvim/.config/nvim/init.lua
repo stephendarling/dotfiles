@@ -43,3 +43,5 @@ for key, func in pairs(keymap) do
 end
 
 vim.opt.pumheight = 4
+
+vim.opt.conceallevel = 0
