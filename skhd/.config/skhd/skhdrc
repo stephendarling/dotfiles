@@ -13,36 +13,16 @@ alt - l : yabai -m window --focus east || yabai -m window --focus first
 ctrl + alt - h : $HOME/.config/yabai/scripts/actions/move.sh west
 ctrl + alt - l : $HOME/.config/yabai/scripts/actions/move.sh east
 
-# Zoom
-ctrl + alt - space : yabai -m window --toggle zoom-parent
-
-# Spaces
-ctrl + alt - c : yabai -m space --create
-ctrl + alt - d : yabai -m space --destroy
-
 # Toggle Columns
 ctrl + alt - 1 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 1
 ctrl + alt - 2 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 2
 ctrl + alt - 3 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 3
-
-alt - 1 : yabai -m space --focus 1
-alt - 2 : yabai -m space --focus 2
-alt - 3 : yabai -m space --focus 3
-alt - 4 : yabai -m space --focus 4
-
-alt - n : yabai -m space --focus next || yabai -m space --focus first
-alt - p : yabai -m space --focus prev || yabai -m space --focus last
-
-ctrl + alt - n : yabai -m window --space next --focus || yabai -m window --space first --focus
-ctrl + alt - p : yabai -m window --space prev --focus || yabai -m window --space last --focus
 
 # Balance
 
 ctrl + alt - b : yabai -m space --balance
 
 # Admin
-alt + ctrl - r : skhd --restart-service
-alt + ctrl + shift - r : yabai --restart-service
-alt + ctrl + shift - b : yabai -m config --space 1 layout bsp
-alt + ctrl + shift - s : yabai -m config --space 1 layout stack
+alt + ctrl - r : $HOME/.config/yabai/scripts/actions/restart.sh
+alt + ctrl + shift - r : skhd --restart-service
 
