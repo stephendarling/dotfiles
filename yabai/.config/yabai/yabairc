@@ -16,10 +16,9 @@ yabai -m config window_insertion_point first
 yabai -m config split_type vertical
 
 # Ignored
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Snagit$" manage=off
-yabai -m rule --add app="^Todoist$" manage=off
-yabai -m rule --add app="^zoom.us" title!="^Zoom Meeting" manage=off
+# yabai -m rule --add app="^System Settings$" manage=off
+# yabai -m rule --add app="^Snagit$" manage=off
+# yabai -m rule --add app="^Todoist$" manage=off
 
 # Signals
 yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/signals/window-created.sh"

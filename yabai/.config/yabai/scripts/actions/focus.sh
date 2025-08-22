@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LOGFILE="$HOME/.config/yabai/logs/action-move.log"
+LOGFILE="$HOME/.config/yabai/logs/action-focus.log"
 
 exec >>$LOGFILE 2>&1
 
@@ -14,7 +14,7 @@ get_columns() {
   column_count=$(defaults read com.koekeishiya.yabai columnMode)
   log "total columns => $column_count"
 
-  current_column=$(jq --arg wid "$move_wid" 'to_entries | .[] | select(.value[] | .id == ($wid | tonumber)) | (.key | tonumber)' <<<$layout)
+  current_column=$(jq --arg wid "$current_wid" 'to_entries | .[] | select(.value[] | .id == ($wid | tonumber)) | (.key | tonumber)' <<<$layout)
   log "current column => $current_column"
 
   east_column=$((current_column + 1))
@@ -35,30 +35,16 @@ get_columns() {
   log "target_column => $target_column"
 }
 
-set_grids() {
-  move_grid="1:$column_count:$((target_column - 1)):0:1:1"
-  replace_grid="1:$column_count:$((current_column - 1)):0:1:1"
-}
-
-move_windows() {
-  yabai -m window $move_wid --grid $move_grid
-  yabai -m window $replace_wid --grid $replace_grid
-}
-
 log "---start---"
 
 target_direction=$1
 
 windows=$(yabai -m query --windows)
-move_wid=$(jq '.[] | select(."has-focus") | .id' <<<$windows)
-layout=$(jq 'map(select(."is-visible")) | group_by(.frame.x) | to_entries | map({key: ((.key + 1) | tostring), value}) | from_entries' <<<$windows)
+current_wid=$(jq '.[] | select(."has-focus") | .id' <<<$windows)
+layout=$(jq 'map(select(."is-visible" == true)) | group_by(.frame.x) | to_entries | map({key: ((.key + 1) | tostring), value}) | from_entries' <<<$windows)
 get_columns
-set_grids
-log "move grid => $move_grid"
-log "replace_grid => $replace_grid"
-replace_wid=$(jq --arg target_column "$target_column" '.[$target_column][0].id' <<<$layout)
-log "replace_window_id => $replace_wid"
-move_windows
+focus_wid=$(jq --arg target_column "$target_column" '.[$target_column][0].id' <<<$layout)
+yabai -m window $focus_wid --focus
 # target_location_wid=$(yabai -m query --windows --window $direction | jq -e '.id' || yabai -m query --windows --window $wrap_direction | jq -e '.id')
 # log "target location wid => $target_location_wid"
 # target_location_column=$(get_window_column $target_location_wid)

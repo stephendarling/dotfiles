@@ -10,5 +10,6 @@ log() {
   echo $MESSAGE
 }
 
-yabai -m window recent --focus
-yabai -m space recent --balance
+# columns=$(defaults read com.koekeishiya.yabai columnMode)
+# yabai -m window last --focus
+# $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh $columns

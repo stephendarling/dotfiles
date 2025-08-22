@@ -48,3 +48,6 @@ brew install --cask font-hack-nerd-font
 - Allow `/opt/` directory to be visible in finder with `sudo chflags nohidden /opt` and then add binary to System Settings -> Privacy & Security -> Input Monitoring
 
 At this point kanata should start automatically at login. To test, stop kanata (if currently running) and run `sudo launchctl start $PLIST_KEY`
+
+
+"can I change this"

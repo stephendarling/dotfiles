@@ -7,8 +7,8 @@ alt - t : $HOME/.config/yabai/scripts/actions/open-app.sh "Ghostty"
 alt - s : $HOME/.config/yabai/scripts/actions/open-app.sh "Slack"
 alt - z : $HOME/.config/yabai/scripts/actions/open-app.sh "zoom.us"
 
-alt - h : yabai -m window --focus west || yabai -m window --focus last
-alt - l : yabai -m window --focus east || yabai -m window --focus first
+alt - h : $HOME/.config/yabai/scripts/actions/focus.sh west
+alt - l : $HOME/.config/yabai/scripts/actions/focus.sh east
 
 ctrl + alt - h : $HOME/.config/yabai/scripts/actions/move.sh west
 ctrl + alt - l : $HOME/.config/yabai/scripts/actions/move.sh east
@@ -16,11 +16,8 @@ ctrl + alt - l : $HOME/.config/yabai/scripts/actions/move.sh east
 # Toggle Columns
 ctrl + alt - 1 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 1
 ctrl + alt - 2 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 2
-ctrl + alt - 3 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 3
-
-# Balance
-
-ctrl + alt - b : yabai -m space --balance
+# 3-column not working yet
+# ctrl + alt - 3 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 3
 
 # Admin
 alt + ctrl - r : $HOME/.config/yabai/scripts/actions/restart.sh
