@@ -82,7 +82,7 @@ create_grid() {
 }
 
 windows=$(yabai -m query --windows)
-space_id=$(jq 'map(select(."has-focus" == true)) | .[0].space' <<<"$windows")
+space_id=1
 
 columns=$1
 

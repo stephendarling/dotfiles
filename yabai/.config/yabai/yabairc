@@ -2,7 +2,7 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
 # Set a default tiling layout
-yabai -m config layout bsp
+yabai -m config layout float
 yabai -m config window_gap 10
 yabai -m config top_padding    10
 yabai -m config bottom_padding 10
@@ -22,6 +22,6 @@ yabai -m config split_type vertical
 
 # Signals
 yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/signals/window-created.sh"
-yabai -m signal --add event=window_destroyed action="$HOME/.config/yabai/scripts/signals/window-destroyed.sh"
+# yabai -m signal --add event=window_destroyed action="$HOME/.config/yabai/scripts/signals/window-destroyed.sh"
 yabai -m signal --add event=display_changed action="$HOME/.config/yabai/scripts/signals/display-changed.sh"
 
