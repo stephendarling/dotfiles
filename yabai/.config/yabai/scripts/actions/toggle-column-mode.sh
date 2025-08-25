@@ -71,8 +71,8 @@ create_grid() {
 
       log "Processing window ID: $id, App: $app, Title: '$title'"
 
-      if ((window == 1)); then
-        yabai -m window $id --grid 1:$columns:1:0:1:1
+      if ((window < columns)); then
+        yabai -m window $id --grid 1:$columns:$((columns - window)):0:1:1
       else
         yabai -m window $id --grid 1:$columns:0:0:1:1
       fi
