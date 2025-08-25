@@ -24,5 +24,6 @@ yabai -m config split_type vertical
 yabai -m signal --add event=window_created action="$HOME/.config/yabai/scripts/signals/window-created.sh"
 yabai -m signal --add event=window_destroyed action="$HOME/.config/yabai/scripts/signals/window-destroyed.sh"
 yabai -m signal --add event=display_changed action="$HOME/.config/yabai/scripts/signals/display-changed.sh"
+# Needed to ensure layered windows are properly surfaced
 yabai -m signal --add event=window_focused action="yabai -m window --window --focus"
 
