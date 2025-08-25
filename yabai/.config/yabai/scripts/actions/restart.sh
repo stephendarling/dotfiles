@@ -11,6 +11,7 @@ log() {
 }
 
 columns=$(defaults read com.koekeishiya.yabai columnMode)
+borders active_color=0xffd30000
 yabai --restart-service
-sleep 1
 $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh $columns
+borders active_color=0xffffffff

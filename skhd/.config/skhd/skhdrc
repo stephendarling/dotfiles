@@ -17,9 +17,9 @@ ctrl + alt - l : $HOME/.config/yabai/scripts/actions/move.sh east
 ctrl + alt - 1 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 1
 ctrl + alt - 2 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 2
 # 3-column not working yet
-# ctrl + alt - 3 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 3
+ctrl + alt - 3 : $HOME/.config/yabai/scripts/actions/toggle-column-mode.sh 3
 
 # Admin
 alt + ctrl - r : $HOME/.config/yabai/scripts/actions/restart.sh
-alt + ctrl + shift - r : skhd --restart-service
+alt + ctrl + shift - r : borders active_color=0xffd30000 && skhd --restart-service && borders active_color=0xffffffff
 
